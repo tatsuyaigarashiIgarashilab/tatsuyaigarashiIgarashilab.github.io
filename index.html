@@ -1,0 +1,3538 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="文京学院大学 理学療法学科 五十嵐達也研究室。神経疾患・前庭機能低下・高齢者の姿勢・歩行障害と転倒のメカニズムを解明し、個別化された評価・予測・リハビリテーションの確立を目指しています。">
+<meta name="author" content="Tatsuya Igarashi">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://tatsuyaigarashiigarashilab.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Igarashi Posture &amp; Gait Lab">
+<meta property="og:title" content="Igarashi Posture &amp; Gait Lab｜五十嵐研究室">
+<meta property="og:description" content="文京学院大学 理学療法学科 五十嵐達也研究室。神経疾患・前庭機能低下・高齢者の姿勢・歩行障害と転倒のメカニズムを解明し、個別化された評価・予測・リハビリテーションの確立を目指しています。">
+<meta property="og:url" content="https://tatsuyaigarashiigarashilab.github.io/">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "Igarashi Posture & Gait Lab",
+  "description": "Posture, Gait & Vestibular Rehabilitation Research Group, Bunkyo Gakuin University (Tatsuya Igarashi, PhD).",
+  "url": "https://tatsuyaigarashiigarashilab.github.io/",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Tatsuya Igarashi",
+    "alternateName": "五十嵐 達也",
+    "jobTitle": "Assistant Professor",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Bunkyo Gakuin University, Faculty of Health and Medical Technology"
+    },
+    "identifier": "https://orcid.org/0000-0001-6864-6316",
+    "sameAs": [
+      "https://researchmap.jp/igrstty",
+      "https://orcid.org/0000-0001-6864-6316",
+      "https://www.bgu.ac.jp/health/staff/tatsuya-igarashi/"
+    ]
+  }
+}
+</script>
+<title>Igarashi Posture & Gait Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --paper:#eaeef1;
+  --surface:#f8fafb;
+  --surface-2:#dfe5ea;
+  --line:#c9d3da;
+  --line-soft:#dce3e8;
+  --ink:#101820;
+  --ink-2:#3d4a56;
+  --ink-3:#6b7883;
+  --trace:#0d6d7b;
+  --trace-ghost:rgba(13,109,123,.10);
+  --vert:#9c5f14;
+  --vert-ghost:rgba(156,95,20,.12);
+  --shadow:0 1px 2px rgba(16,24,32,.05),0 8px 24px -16px rgba(16,24,32,.28);
+  --maxw:1180px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0c1116;
+    --surface:#121a21;
+    --surface-2:#1a242d;
+    --line:#27333d;
+    --line-soft:#1e2830;
+    --ink:#e6edf3;
+    --ink-2:#a7b5c0;
+    --ink-3:#78868f;
+    --trace:#4ecfdc;
+    --trace-ghost:rgba(78,207,220,.12);
+    --vert:#e3ab52;
+    --vert-ghost:rgba(227,171,82,.14);
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0c1116;
+  --surface:#121a21;
+  --surface-2:#1a242d;
+  --line:#27333d;
+  --line-soft:#1e2830;
+  --ink:#e6edf3;
+  --ink-2:#a7b5c0;
+  --ink-3:#78868f;
+  --trace:#4ecfdc;
+  --trace-ghost:rgba(78,207,220,.12);
+  --vert:#e3ab52;
+  --vert-ghost:rgba(227,171,82,.14);
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -18px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Archivo","Zen Kaku Gothic New",system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{margin:0;text-wrap:balance;line-height:1.28;font-weight:600}
+p{margin:0}
+a{color:inherit}
+ul,ol{margin:0;padding:0;list-style:none}
+img{max-width:100%}
+:focus-visible{outline:2px solid var(--trace);outline-offset:3px;border-radius:2px}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.mono{font-family:"IBM Plex Mono","Zen Kaku Gothic New",monospace}
+
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);display:flex;align-items:center;gap:10px;
+}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* ---------- header ---------- */
+.masthead{
+  position:sticky;top:0;z-index:60;
+  background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line-soft);
+}
+.masthead .bar{
+  display:flex;align-items:center;gap:20px;
+  min-height:62px;
+}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
+.brand .sigil{width:26px;height:26px;color:var(--trace);flex-shrink:0}
+.brand b{font-size:15px;font-weight:600;letter-spacing:-.01em;white-space:nowrap}
+.brand .sub{
+  display:block;font-family:"IBM Plex Mono",monospace;
+  font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+}
+.sitenav{
+  display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none;
+}
+.sitenav::-webkit-scrollbar{display:none}
+.sitenav a{
+  text-decoration:none;font-size:13px;color:var(--ink-2);
+  padding:6px 10px;border-radius:4px;white-space:nowrap;
+  transition:color .18s,background .18s;
+}
+.sitenav a:hover{color:var(--ink);background:var(--surface-2)}
+.sitenav a.on{color:var(--ink);font-weight:500;box-shadow:inset 0 -2px 0 var(--trace)}
+.langbtn{
+  flex-shrink:0;font-family:"IBM Plex Mono",monospace;font-size:11px;
+  letter-spacing:.08em;background:none;border:1px solid var(--line);
+  color:var(--ink-2);border-radius:999px;padding:5px 11px;cursor:pointer;
+  transition:border-color .18s,color .18s;
+}
+.langbtn:hover{border-color:var(--trace);color:var(--ink)}
+.langbtn b{color:var(--ink);font-weight:600}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line-soft)}
+#sway{position:absolute;inset:0;width:100%;height:100%;opacity:.85}
+.hero .wrap{position:relative;z-index:2;padding-top:66px;padding-bottom:72px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:end}
+.hero h1{
+  font-size:clamp(28px,4.6vw,52px);letter-spacing:-.025em;font-weight:600;
+  line-height:1.18;
+}
+.hero h1 .ln{display:block;white-space:nowrap}
+.hero h1 em{font-style:normal;color:var(--trace)}
+.hero .jptitle{
+  font-size:clamp(15px,1.7vw,18px);color:var(--ink-2);margin-top:18px;font-weight:500;
+  letter-spacing:.02em;
+}
+.hero .lede{margin-top:22px;max-width:52ch;color:var(--ink-2);font-size:15.5px}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:28px;
+}
+.tagpill{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.09em;
+  text-transform:uppercase;border:1px solid var(--line);border-radius:999px;
+  padding:5px 12px;color:var(--ink-2);background:var(--surface);
+}
+.counters{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.counters div{background:var(--surface);padding:16px 18px}
+.counters b{
+  display:block;font-family:"IBM Plex Mono",monospace;font-size:26px;
+  font-weight:500;color:var(--trace);letter-spacing:-.02em;line-height:1.2;
+  font-variant-numeric:tabular-nums;
+}
+.counters small{font-size:11px;color:var(--ink-3);letter-spacing:.05em;line-height:1.5;display:block;margin-top:2px}
+
+/* ---------- sections ---------- */
+section{padding:76px 0;border-bottom:1px solid var(--line-soft)}
+section:last-of-type{border-bottom:0}
+.sechead{display:flex;flex-direction:column;gap:14px;margin-bottom:38px}
+.sechead h2{font-size:clamp(23px,3vw,32px);letter-spacing:-.02em}
+.sechead h2 span{color:var(--ink-3);font-weight:400;font-size:.62em;margin-left:.7em;letter-spacing:0}
+.sechead p{color:var(--ink-2);max-width:64ch;font-size:14.5px}
+
+/* ---------- research areas ---------- */
+.areas{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.area{
+  position:relative;text-align:left;cursor:pointer;
+  background:var(--surface);border:1px solid var(--line);
+  padding:20px 17px 17px;display:flex;flex-direction:column;gap:11px;
+  color:inherit;font:inherit;border-radius:3px;
+  transition:border-color .2s,transform .2s,box-shadow .2s;
+}
+.area:hover{border-color:var(--trace);transform:translateY(-3px);box-shadow:var(--shadow)}
+.area[aria-pressed="true"]{border-color:var(--trace);box-shadow:inset 0 0 0 1px var(--trace),var(--shadow)}
+.area[aria-pressed="true"] .glyph{background:var(--trace-ghost)}
+.area .glyph{
+  width:46px;height:46px;color:var(--trace);border:1px solid var(--line);
+  border-radius:50%;display:grid;place-items:center;transition:background .2s;
+}
+.area .glyph svg{width:26px;height:26px}
+.area .idx{
+  position:absolute;top:16px;right:16px;font-family:"IBM Plex Mono",monospace;
+  font-size:10px;color:var(--ink-3);letter-spacing:.1em;
+}
+.area h3{font-size:15px;letter-spacing:-.015em;line-height:1.35}
+.area .jp{font-size:11.5px;color:var(--ink-3);margin-top:3px;line-height:1.5}
+.area p{font-size:12.5px;color:var(--ink-2);line-height:1.72}
+.area .cnt{
+  margin-top:auto;padding-top:12px;border-top:1px solid var(--line-soft);
+  font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--ink-3);
+  letter-spacing:.03em;font-variant-numeric:tabular-nums;
+}
+
+.mission{
+  background:var(--surface-2);border-bottom:1px solid var(--line-soft);
+  padding:64px 0;
+}
+.mission-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:52px;align-items:start}
+.mission .stmt{
+  font-size:clamp(16.5px,1.85vw,21px);line-height:1.95;font-weight:500;letter-spacing:.005em;
+  text-wrap:pretty;border-left:2px solid var(--vert);padding-left:22px;
+}
+.mission .stmt .lead{display:block}
+.mission .stmt .sub{display:block;margin-top:18px;font-size:.78em;font-weight:400;color:var(--ink-2);line-height:1.9}
+.pillars{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line)}
+.pillars > div{background:var(--surface);padding:20px 22px}
+.pillars h4{font-size:13.5px;display:flex;align-items:baseline;gap:9px;margin-bottom:7px}
+.pillars h4 i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:10px;letter-spacing:.1em;color:var(--vert);text-transform:uppercase}
+.pillars p{font-size:12.5px;color:var(--ink-2);line-height:1.75}
+.filterbar{
+  position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:70;
+  display:flex;align-items:center;gap:12px;
+  max-width:calc(100vw - 32px);
+  background:var(--surface);border:1px solid var(--trace);
+  box-shadow:var(--shadow);
+  padding:9px 10px 9px 18px;border-radius:999px;font-size:13px;
+}
+.filterbar[hidden]{display:none}
+.filterbar .lbl{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.filterbar strong{color:var(--trace);font-weight:600}
+.filterbar button{
+  margin-left:auto;background:none;border:1px solid var(--line);color:var(--ink-2);
+  border-radius:999px;padding:4px 12px;font:inherit;font-size:12px;cursor:pointer;
+}
+.filterbar button:hover{border-color:var(--trace);color:var(--ink)}
+
+/* ---------- approach ---------- */
+.approach{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:44px}
+.approach > div{background:var(--surface);padding:24px 22px}
+.approach h4{font-size:14px;margin-bottom:8px;display:flex;align-items:baseline;gap:9px}
+.approach h4 i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:11px;color:var(--vert)}
+.approach p{font-size:13px;color:var(--ink-2);line-height:1.75}
+
+/* ---------- members ---------- */
+.pi{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:0;
+  border:1px solid var(--line);background:var(--surface);margin-bottom:20px;
+}
+.pi-id{padding:30px 30px;border-right:1px solid var(--line)}
+.pi-id .role{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--vert)}
+.pi-id h3{font-size:26px;margin-top:10px;letter-spacing:-.02em}
+.pi-id .en{font-size:13px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace;letter-spacing:.02em;margin-top:4px}
+.pi-id .aff{margin-top:16px;font-size:13.5px;color:var(--ink-2);line-height:1.85}
+.pi-body{padding:30px}
+.pi-body .quote{
+  font-size:15px;line-height:1.9;border-left:2px solid var(--vert);padding-left:16px;color:var(--ink);
+}
+.deflist{display:grid;grid-template-columns:auto 1fr;gap:10px 20px;margin-top:22px;font-size:13px}
+.deflist dt{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding-top:4px}
+.deflist dd{margin:0;color:var(--ink-2);line-height:1.7}
+.linkrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.linkrow a{
+  font-size:12.5px;text-decoration:none;border:1px solid var(--line);
+  padding:6px 13px;border-radius:999px;color:var(--ink-2);
+  display:inline-flex;align-items:center;gap:7px;transition:.18s;
+}
+.linkrow a:hover{border-color:var(--trace);color:var(--ink)}
+.linkrow a::after{content:"↗";font-size:10px;color:var(--ink-3)}
+
+.memgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mem{
+  background:var(--surface);border:1px solid var(--line);padding:20px;
+  display:flex;flex-direction:column;gap:8px;border-radius:3px;
+}
+.mem .role{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.mem h4{font-size:17px;letter-spacing:-.01em}
+.mem .en{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+.mem .aff{font-size:12.5px;color:var(--ink-2);line-height:1.6}
+.mem .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:10px}
+.chip{
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--trace);background:var(--trace-ghost);
+  padding:3px 8px;border-radius:999px;white-space:nowrap;
+}
+.chip.v{color:var(--vert);background:var(--vert-ghost)}
+
+/* ---------- publications ---------- */
+.pubtools{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.pubsearch{
+  margin-left:auto;display:flex;align-items:center;gap:8px;
+  border:1px solid var(--line);background:var(--surface);border-radius:999px;
+  padding:6px 14px;min-width:250px;color:var(--ink-3);
+  transition:border-color .18s;
+}
+.pubsearch:focus-within{border-color:var(--trace)}
+.pubsearch svg{width:15px;height:15px;flex-shrink:0}
+.pubsearch input{
+  border:0;background:none;outline:none;font:inherit;font-size:13px;color:var(--ink);
+  width:100%;padding:0;
+}
+.pubsearch input::-webkit-search-cancel-button{filter:grayscale(1);opacity:.5}
+.pubfoot{
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:22px 4px 0;
+}
+#pubcount{font-size:11.5px;color:var(--ink-3);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+#pubmore{
+  font:inherit;font-size:13px;cursor:pointer;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 18px;
+  transition:.18s;
+}
+#pubmore:hover{border-color:var(--trace);color:var(--ink)}
+#pubmore[hidden]{display:none}
+.tabs button{
+  font:inherit;font-size:12.5px;background:none;border:1px solid transparent;
+  color:var(--ink-3);padding:6px 13px;border-radius:999px;cursor:pointer;transition:.18s;
+}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{
+  color:var(--ink);border-color:var(--line);background:var(--surface);font-weight:500;
+}
+.tabs button .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);margin-left:6px}
+
+.publist{border-top:1px solid var(--line);margin-top:18px}
+.pub{
+  display:grid;grid-template-columns:78px minmax(0,1fr);gap:22px;
+  padding:18px 4px;border-bottom:1px solid var(--line-soft);
+  transition:opacity .25s,filter .25s;
+}
+.pub .yr{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;padding-top:3px;letter-spacing:.02em;
+}
+.pub .yr b{display:block;color:var(--ink-2);font-weight:500}
+.pub .ttl{font-size:15px;line-height:1.6;letter-spacing:-.005em;font-weight:500}
+.pub .ttl a{text-decoration:none;border-bottom:1px solid transparent;transition:.18s}
+.pub .ttl a:hover{color:var(--trace);border-bottom-color:var(--trace)}
+.pub .au{font-size:12.5px;color:var(--ink-3);margin-top:6px;line-height:1.65}
+.pub .au u{text-decoration:none;color:var(--ink);font-weight:600;border-bottom:1px solid var(--vert)}
+.pub .jr{font-size:12.5px;color:var(--ink-2);margin-top:4px;font-style:italic}
+.pub .jr span{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+.pub .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.pub.dim,.pub.over{display:none}
+.emptynote{padding:26px 4px;color:var(--ink-3);font-size:13.5px}
+.emptynote[hidden]{display:none}
+
+.morelink{
+  margin-top:22px;display:inline-flex;align-items:center;gap:9px;font-size:13px;
+  text-decoration:none;color:var(--ink-2);border-bottom:1px solid var(--line);padding-bottom:3px;
+}
+.morelink:hover{color:var(--trace);border-color:var(--trace)}
+
+/* ---------- projects ---------- */
+.projgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.proj{
+  background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--trace);
+  padding:20px 22px;display:flex;flex-direction:column;gap:9px;
+  transition:opacity .25s,transform .2s;
+}
+.proj.past{border-left-color:var(--line)}
+.proj.dim{display:none}
+.proj .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.proj .per{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-2);letter-spacing:.03em;font-variant-numeric:tabular-nums}
+.badge{
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  padding:3px 8px;border-radius:2px;border:1px solid var(--line);color:var(--ink-3);
+}
+.badge.live{color:var(--vert);border-color:var(--vert);background:var(--vert-ghost)}
+.badge.pi{color:var(--trace);border-color:var(--trace);background:var(--trace-ghost)}
+.proj h4{font-size:15px;line-height:1.6}
+.proj .fund{font-size:12.5px;color:var(--ink-3);line-height:1.6}
+
+/* ---------- news ---------- */
+.news{position:relative;padding-left:22px}
+.news::before{content:"";position:absolute;left:4px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.newsitem{position:relative;display:grid;grid-template-columns:96px minmax(0,1fr);gap:20px;padding:13px 0}
+.newsitem::before{
+  content:"";position:absolute;left:-22px;top:22px;width:9px;height:9px;border-radius:50%;
+  background:var(--paper);border:1.5px solid var(--line);
+}
+.newsitem.hi::before{background:var(--vert);border-color:var(--vert)}
+.newsitem .d{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);padding-top:4px;font-variant-numeric:tabular-nums}
+.newsitem .k{
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-3);display:block;margin-bottom:3px;
+}
+.newsitem.hi .k{color:var(--vert)}
+.newsitem.up::before{background:var(--paper);border-color:var(--trace);border-width:2px}
+.newsitem.up .k{color:var(--trace)}
+.newsitem.over{display:none}
+.newsitem i{font-style:italic}
+.newsitem .t{font-size:14px;line-height:1.65;color:var(--ink)}
+
+/* ---------- recruitment / contact ---------- */
+.recgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rec{background:var(--surface);border:1px solid var(--line);padding:24px;border-radius:3px;display:flex;flex-direction:column;gap:11px}
+.rec .n{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--vert);letter-spacing:.1em}
+.rec h4{font-size:16px}
+.rec p{font-size:13px;color:var(--ink-2);line-height:1.75}
+.rec ul{display:flex;flex-direction:column;gap:6px;font-size:12.5px;color:var(--ink-2)}
+.rec li{padding-left:15px;position:relative;line-height:1.65}
+.rec li::before{content:"";position:absolute;left:0;top:.72em;width:6px;height:1px;background:var(--vert)}
+
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;border:1px solid var(--line);background:var(--surface)}
+.contact > div{padding:30px}
+.contact > div:first-child{border-right:1px solid var(--line)}
+.contact h4{font-size:15px;margin-bottom:14px}
+.contact p{font-size:13.5px;color:var(--ink-2);line-height:1.85}
+
+footer{padding:44px 0 60px;color:var(--ink-3);font-size:12.5px}
+footer .frow{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:flex-start}
+footer a{color:var(--ink-2)}
+footer .note{max-width:56ch;line-height:1.75;font-size:12px}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  *{scroll-behavior:auto!important}
+}
+html{scroll-behavior:smooth;scroll-padding-top:74px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){
+  .areas{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:1020px){
+  .areas{grid-template-columns:repeat(2,1fr)}
+  .mission-grid{grid-template-columns:1fr;gap:34px}
+  .memgrid{grid-template-columns:repeat(2,1fr)}
+  .hero-grid{grid-template-columns:1fr;gap:38px;align-items:start}
+  .approach{grid-template-columns:1fr}
+  .recgrid{grid-template-columns:1fr}
+}
+@media (max-width:400px){
+  .hero h1{font-size:24px}
+}
+@media (max-width:760px){
+  body{font-size:15px}
+  .wrap{padding:0 18px}
+  section{padding:54px 0}
+  .hero .wrap{padding-top:56px;padding-bottom:56px}
+  .masthead .bar{min-height:56px;gap:12px}
+  .brand .sub{display:none}
+  .sitenav{order:3;width:100%;margin:0 -18px;padding:0 18px 8px;border-top:1px solid var(--line-soft)}
+  .masthead .bar{flex-wrap:wrap;padding-top:8px}
+  .areas,.projgrid,.memgrid{grid-template-columns:1fr}
+  .mission{padding:46px 0}
+  .pi,.contact{grid-template-columns:1fr}
+  .pi-id{border-right:0;border-bottom:1px solid var(--line)}
+  .contact > div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .pub{grid-template-columns:1fr;gap:8px}
+  .pubsearch{margin-left:0;width:100%;min-width:0}
+  .pub .yr{display:flex;gap:10px;padding-top:0}
+  .newsitem{grid-template-columns:1fr;gap:4px}
+  .filterbar{left:14px;right:14px;bottom:14px;transform:none;max-width:none;border-radius:12px;flex-wrap:wrap;padding:10px 12px}
+}
+</style>
+
+<header class="masthead">
+  <div class="wrap bar">
+    <a class="brand" href="#home">
+      <svg class="sigil" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.2" opacity=".35"/>
+        <path d="M20 4v32" stroke="currentColor" stroke-width="1" opacity=".3"/>
+        <path d="M9 26c3-1 3-9 6-10s4 7 7 5 3-9 6-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <span class="nmwrap">
+        <b data-en="Igarashi Lab">五十嵐研究室</b>
+        <span class="sub">Posture · Gait · Vestibular</span>
+      </span>
+    </a>
+    <nav class="sitenav" id="nav">
+      <a href="#home" data-en="Home">ホーム</a>
+      <a href="#research" data-en="Research">研究</a>
+      <a href="#members" data-en="Members">メンバー</a>
+      <a href="#publications" data-en="Publications">論文業績</a>
+      <a href="#projects" data-en="Projects">研究課題</a>
+      <a href="#news" data-en="News">ニュース</a>
+      <a href="#recruit" data-en="Join Us">募集</a>
+      <a href="#contact" data-en="Contact">連絡先</a>
+    </nav>
+    <button class="langbtn" id="lang" type="button" aria-label="Switch language"><b>JA</b> / EN</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <canvas id="sway" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow" data-en="Research Network &nbsp;·&nbsp; Bunkyo Gakuin University">Research Network &nbsp;·&nbsp; 文京学院大学 理学療法学科</p>
+        <h1 style="margin-top:22px" data-en="Measuring the body&rsquo;s <em>upright</em> sense &mdash; and rebuilding it."><span class="ln">姿勢と歩行の<em>ゆらぎ</em>を</span><span class="ln">測り、転倒を予測する。</span></h1>
+        <p class="jptitle" data-en="Posture, Gait &amp; Vestibular Rehabilitation Research Group">Posture, Gait &amp; Vestibular Rehabilitation Research Group</p>
+        <p class="lede" data-en="We study how the brain, the vestibular system and the body build a sense of vertical &mdash; and why it fails. Working across stroke units, vestibular clinics and biomechanics labs, we turn posture and gait measurement into individualised assessment, prediction and rehabilitation.">神経疾患・前庭機能低下・高齢者における姿勢・歩行障害と転倒のメカニズムを解明し、個別化された評価・予測・リハビリテーションの確立を目指しています。臨床現場での outcome measure の開発・検証と、バイオメカニクス手法による姿勢制御の基礎研究を両輪としています。</p>
+        <div class="hero-meta">
+          <span class="tagpill">Vestibular Rehabilitation</span>
+          <span class="tagpill">Stroke &amp; Balance</span>
+          <span class="tagpill">Gait Analysis</span>
+          <span class="tagpill">Prognostic Prediction</span>
+          <span class="tagpill">Digital Health / AI</span>
+        </div>
+      </div>
+      <div class="counters">
+        <div><b>62</b><small data-en="Peer-reviewed papers">査読付き論文</small></div>
+        <div><b>11</b><small data-en="Funded projects">競争的研究資金</small></div>
+        <div><b>158</b><small data-en="Talks &amp; presentations">学会発表・講演</small></div>
+        <div><b>7</b><small data-en="Academic awards">学会賞・受賞</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mission" id="mission">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:30px">Mission</p>
+    <div class="mission-grid">
+      <p class="stmt" data-en="<span class=&quot;lead&quot;>We work to explain the mechanisms of postural and gait disorder and falls in neurological disease, vestibular hypofunction and older adults, and to establish individualised assessment, prediction and rehabilitation.</span><span class=&quot;sub&quot;>Alongside this clinical work, we run basic research on postural control using biomechanical methods &mdash; because a measure only becomes useful once the mechanism behind it is understood.</span>"><span class="lead">神経疾患・前庭機能低下・高齢者に対する姿勢・歩行障害と転倒のメカニズムを解明し、個別化された評価・予測・リハビリテーションの確立を目指しています。</span><span class="sub">あわせて、バイオメカニクス手法を用いた姿勢制御の基礎研究にも取り組んでいます。現象のメカニズムが分かって初めて、評価指標は臨床で意味を持つと考えているためです。</span></p>
+      <div class="pillars">
+        <div>
+          <h4><i>Clinical</i><span data-en="Assessment · Prediction · Rehabilitation">評価・予測・リハビリテーション</span></h4>
+          <p data-en="Outcome measures developed and validated in acute and convalescent wards and dizziness clinics, then turned into prognostic models and individualised programmes.">急性期・回復期病棟やめまい外来で outcome measure を開発・検証し、予後予測モデルと個別化プログラムへ展開します。</p>
+        </div>
+        <div>
+          <h4><i>Basic</i><span data-en="Biomechanics of postural control">姿勢制御のバイオメカニクス</span></h4>
+          <p data-en="Postural control studied with posturography, inertial sensors, motion capture and optokinetic / moving-platform paradigms &mdash; in patients and in healthy participants alike.">重心動揺計・慣性センサ・動作解析、視運動刺激や動揺platformを用いた実験により、患者・健常者双方で姿勢制御の機序を検討します。</p>
+        </div>
+        <div>
+          <h4><i>Translation</i><span data-en="From the lab bench to the ward">基礎と臨床をつなぐ</span></h4>
+          <p data-en="Findings move in both directions: laboratory paradigms become bedside tests, and clinical questions become experiments.">実験室のパラダイムをベッドサイドの評価に落とし込み、臨床の疑問を実験に持ち帰る。双方向の往復を研究の設計指針としています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">Research Areas</p>
+      <h2 data-en="Five axes of enquiry <span>Pick one to filter the whole site</span>">5つの研究領域 <span>クリックするとサイト全体が絞り込まれます</span></h2>
+      <p data-en="Each area is a live filter: selecting one narrows the publications, funded projects and collaborators below to the work that belongs to it.">各領域はフィルターとして機能します。選択すると、下の論文・研究課題・メンバーが該当するものだけに絞り込まれます。</p>
+    </div>
+
+    <div class="areas">
+      <button class="area" type="button" data-area="vestibular" aria-pressed="false">
+        <span class="idx">A1</span>
+        <span class="glyph">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 28c-6 0-9-4-9-8s3-7 3-11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M10 9c0-3 2.5-5 5.5-5S21 6 21 9s-2 4.5-2 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="19" cy="19" r="4.5" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="19" cy="19" r="1.4" fill="currentColor"/>
+          </svg>
+        </span>
+        <div>
+          <h3>Vestibular Rehabilitation</h3>
+          <p class="jp" data-en="Dizziness, verticality, gaze stability">前庭リハビリテーション</p>
+        </div>
+        <p data-en="Subjective visual vertical, optokinetic stimulation and vestibular exercise for central and peripheral dizziness.">自覚的視性垂直位（SVV）、視運動刺激、めまいに対する前庭代償と運動療法の効果検証。</p>
+        <span class="cnt" data-cnt="vestibular"></span>
+      </button>
+
+      <button class="area" type="button" data-area="stroke" aria-pressed="false">
+        <span class="idx">A2</span>
+        <span class="glyph">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M4 26h24" stroke="currentColor" stroke-width="1.4" opacity=".5"/>
+            <path d="M16 26V11" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="16" cy="7.5" r="3.5" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M16 14l7-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M25 8.5l3 2.5-3 2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <div>
+          <h3>Stroke &amp; Balance</h3>
+          <p class="jp" data-en="Lateropulsion, postural control, prognosis">脳卒中とバランス</p>
+        </div>
+        <p data-en="Pusher behaviour and body lateropulsion, quiet-standing phenotypes, and the psychometrics of balance scales.">Lateropulsion・Pusher現象、静止立位の姿勢制御表現型、バランス尺度の計量心理学的検証。</p>
+        <span class="cnt" data-cnt="stroke"></span>
+      </button>
+
+      <button class="area" type="button" data-area="gait" aria-pressed="false">
+        <span class="idx">A3</span>
+        <span class="glyph">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M3 16c2.5 0 2.5-8 5-8s2.5 16 5 16 2.5-12 5-12 2.5 8 5 8 2.5-4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <div>
+          <h3>Gait Analysis</h3>
+          <p class="jp" data-en="IMU trunk acceleration, fall risk">歩行分析</p>
+        </div>
+        <p data-en="IMU trunk acceleration indices, their measurement error, and the balance tasks that separate fallers from non-fallers.">慣性センサによる体幹加速度指標とその測定誤差（MDC）、転倒者を判別するバランス課題。</p>
+        <span class="cnt" data-cnt="gait"></span>
+      </button>
+
+      <button class="area" type="button" data-area="prognosis" aria-pressed="false">
+        <span class="idx">A4</span>
+        <span class="glyph">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M3 24c3.5 0 6-3 8.5-6.5S16 10 18 10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M18 10c2.6 0 4 2.2 5.5 4.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.6 3"/>
+            <path d="M18 10c2.4-1.6 4.4-2.6 7-2.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.6 3"/>
+            <circle cx="18" cy="10" r="2.2" fill="currentColor"/>
+            <circle cx="26.4" cy="6.9" r="1.5" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="24.2" cy="15.3" r="1.5" stroke="currentColor" stroke-width="1.3"/>
+          </svg>
+        </span>
+        <div>
+          <h3>Prognostic Prediction</h3>
+          <p class="jp" data-en="Walking independence, ADL, falls">予後予測</p>
+        </div>
+        <p data-en="Predicting walking independence, ADL and falls from early clinical data &mdash; model building and external validation.">早期の臨床データから歩行自立度・ADL・転倒を予測するモデルの構築と外的妥当性の検証。</p>
+        <span class="cnt" data-cnt="prognosis"></span>
+      </button>
+
+      <button class="area" type="button" data-area="digital" aria-pressed="false">
+        <span class="idx">A5</span>
+        <span class="glyph">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="7" cy="9" r="2.4" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="25" cy="7" r="2.4" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="16" cy="17" r="2.8" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="6" cy="25" r="2.4" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="26" cy="24" r="2.4" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M9 10.5l4.5 4.5M23 8.8L18 14.5M13.8 19L8 23.2M18.4 18.7l5.4 4" stroke="currentColor" stroke-width="1.3" opacity=".8"/>
+          </svg>
+        </span>
+        <div>
+          <h3>Digital Health / AI</h3>
+          <p class="jp" data-en="VR, markerless capture, prediction models">デジタルヘルス / AI</p>
+        </div>
+        <p data-en="Smartphone VR assessment, markerless motion capture (OpenCap) and clinical databases as measurement infrastructure.">スマートフォンVRによる評価、マーカーレス動作解析（OpenCap）、臨床データベースの構築と活用。</p>
+        <span class="cnt" data-cnt="digital"></span>
+      </button>
+    </div>
+
+    <div class="filterbar" id="filterbar" hidden>
+      <span class="lbl" data-en="Filtering by">絞り込み中</span>
+      <strong id="filtername">&mdash;</strong>
+      <span id="filtercount" class="mono" style="font-size:12px;color:var(--ink-3)"></span>
+      <button type="button" id="clearfilter" data-en="Clear filter">絞り込みを解除</button>
+    </div>
+
+    <div class="approach">
+      <div>
+        <h4><i>01</i><span data-en="Measure">測る</span></h4>
+        <p data-en="Posturography, inertial sensors, subjective visual vertical and markerless capture &mdash; quantifying what a bedside test can only grade.">重心動揺計・慣性センサ・SVV・マーカーレス動作解析。臨床評価だけでは段階分けにとどまる現象を、定量指標に置き換えます。</p>
+      </div>
+      <div>
+        <h4><i>02</i><span data-en="Validate">確かめる</span></h4>
+        <p data-en="Reliability, minimal detectable change, item response theory and external validation &mdash; a measure is only useful once its error is known.">信頼性・最小可検変化量（MDC）・項目反応理論・外的妥当性の検証。誤差が分かって初めて指標は臨床で使えます。</p>
+      </div>
+      <div>
+        <h4><i>03</i><span data-en="Predict &amp; treat">予測し、介入する</span></h4>
+        <p data-en="Fall-risk and walking-independence models feed back into vestibular exercise, stimulation and individualised rehabilitation programmes.">転倒リスク・歩行自立の予測モデルを、前庭リハビリテーションや刺激介入など個別化プログラムの設計に還元します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="members">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">Members</p>
+      <h2 data-en="The people behind the measurements">メンバー</h2>
+      <p data-en="A distributed group: a university laboratory at its centre, with clinicians and researchers across hospitals and universities who run the studies where the patients are.">大学の研究室を中心に、病院・大学に所属する臨床家・研究者が参加する分散型のネットワークです。臨床現場でデータが取れることを最優先に研究を設計しています。</p>
+    </div>
+
+    <div class="pi">
+      <div class="pi-id">
+        <p class="role" data-en="Principal Investigator">研究代表者</p>
+        <h3 data-en="Tatsuya Igarashi, PhD">五十嵐 達也</h3>
+        <p class="en" data-en="五十嵐 達也 / いがらし たつや">Tatsuya Igarashi, PhD</p>
+        <p class="aff" data-en="Assistant Professor, Department of Physical Therapy,<br>Faculty of Health and Medical Technology, Bunkyo Gakuin University<br>Visiting Researcher, Mejiro University Otologic Research Institute Clinic<br>Part-time Lecturer, Dept. of Rehabilitation, Shonan Keiiku Hospital<br>Part-time Lecturer, Ningen Sogo Kagaku University">文京学院大学 保健医療技術学部 理学療法学科 助教<br>目白大学 耳科学研究所クリニック 客員研究員<br>湘南慶育病院 リハビリテーション科 非常勤講師<br>人間総合科学大学 非常勤講師</p>
+        <div class="chips" style="display:flex;flex-wrap:wrap;gap:5px;margin-top:16px">
+          <span class="chip">Vestibular</span><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Digital</span>
+        </div>
+      </div>
+      <div class="pi-body">
+        <p class="quote" data-en="&ldquo;We want to explain the mechanisms of postural and gait disorder and falls in neurological disease, vestibular hypofunction and older adults &mdash; and to establish individualised assessment, prediction and rehabilitation.&rdquo;">「神経疾患・前庭機能低下・高齢者に対する姿勢・歩行障害と転倒のメカニズムを解明し、個別化された評価・予測・リハビリテーションの確立を目指しています。」</p>
+        <dl class="deflist">
+          <dt data-en="Degree">学位</dt>
+          <dd data-en="PhD in Health Sciences, Gunma University Graduate School (2023)<br>MSc in Health Sciences, Gunma University Graduate School (2020)">博士（保健学）群馬大学大学院 保健学研究科 博士後期課程 修了（2023）<br>修士（保健学）群馬大学大学院 保健学研究科（2020）</dd>
+          <dt data-en="Fields">専門分野</dt>
+          <dd data-en="Neurological physical therapy · Functional diagnostics · Rehabilitation science · Otolaryngology · Medical technology assessment · Biomedical engineering">中枢神経系理学療法学／機能診断学・リハビリテーション科学・耳鼻咽喉科学・医療技術評価学・生体医工学・医療福祉工学</dd>
+          <dt data-en="Career">経歴</dt>
+          <dd data-en="2010 Numata Neurosurgery &amp; Cardiovascular Hospital, Dept. of Physical Therapy → 2015 Chief → 2024 Assistant Professor, Bunkyo Gakuin University → 2025 Visiting Researcher, Mejiro University → 2026 Part-time Lecturer, Ningen Sogo Kagaku University">2010 社会医療法人輝城会 沼田脳神経外科循環器科病院 理学療法課 → 2015 同 主任 → 2024 文京学院大学 助教 → 2025 目白大学 耳科学研究所クリニック 客員研究員 → 2026 人間総合科学大学 非常勤講師</dd>
+          <dt data-en="Licences">資格</dt>
+          <dd data-en="Specialist Physical Therapist (Neurology) · Certified Physical Therapist (Stroke) · Certified Respiratory Therapist (3 societies) · Frailty Countermeasure Manager · Community Care Conference Leader · Preventive Care Promotion Leader · Certified Administrator (Advanced)">専門理学療法士（神経）／認定理学療法士（脳卒中）／3学会合同呼吸療法認定士／フレイル対策推進マネジャー／地域ケア会議推進リーダー／介護予防推進リーダー／協会指定管理者（上級）</dd>
+          <dt data-en="Teaching">担当科目</dt>
+          <dd data-en="Central Nervous System Physical Therapy I·II and practicum · Functional Diagnostics II · Activities of Daily Living · Physical Therapy Management I · Rehabilitation Neurology · Introduction to Rehabilitation · Biomedical Ethics">中枢神経理学療法学Ⅰ・Ⅱ／同実習／機能診断技術学Ⅱ／日常生活活動学／理学療法管理学Ⅰ／リハビリテーション神経内科／リハビリテーション概論／理学療法概論演習／生命倫理</dd>
+          <dt data-en="Editorial">編集・査読</dt>
+          <dd data-en="Editorial Board: BMC Neurology (2026–), BMC Geriatrics (2025–) · Reviewer Board: Physical Therapy Research (2026–) · Director, Japan Vestibular Physical Therapy Association (2025–) · SIGs member, World Federation for NeuroRehabilitation">Editorial Board：BMC Neurology（2026–）／BMC Geriatrics（2025–）　Reviewer Board：Physical Therapy Research（2026–）　日本前庭理学療法学会 理事（2025–）　World Federation for NeuroRehabilitation SIGs 委員</dd>
+        </dl>
+        <div class="linkrow">
+          <a href="https://researchmap.jp/igrstty" target="_blank" rel="noopener">researchmap</a>
+          <a href="https://www.bgu.ac.jp/health/staff/tatsuya-igarashi/" target="_blank" rel="noopener" data-en="Bunkyo Gakuin University">文京学院大学 教員紹介</a>
+          <a href="https://orcid.org/0000-0001-6864-6316" target="_blank" rel="noopener">ORCID 0000-0001-6864-6316</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="memgrid">
+      <div class="mem" data-areas="stroke gait">
+        <p class="role" data-en="Collaborating Researcher">共同研究者</p>
+        <div>
+          <h4>根津 利也</h4>
+        </div>
+        <p class="aff" data-en="Juntendo University Graduate School">順天堂大学大学院</p>
+        <div class="chips"><span class="chip v" data-en="Clinical research">臨床研究</span></div>
+      </div>
+      <div class="mem" data-areas="vestibular stroke">
+        <p class="role" data-en="Collaborating Researcher">共同研究者</p>
+        <div>
+          <h4 data-en="Naoya Yamamoto">山本 直弥</h4>
+          <p class="en">Naoya Yamamoto</p>
+        </div>
+        <p class="aff" data-en="Shonan Keiiku Hospital">湘南慶育病院</p>
+        <div class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></div>
+      </div>
+      <div class="mem" data-areas="vestibular digital stroke">
+        <p class="role" data-en="Collaborating Researcher">共同研究者</p>
+        <div>
+          <h4 data-en="Shota Hayashi">林 翔太</h4>
+          <p class="en">Shota Hayashi</p>
+        </div>
+        <p class="aff" data-en="Gunma Paz University">群馬パース大学</p>
+        <div class="chips"><span class="chip">Vestibular</span><span class="chip">Digital</span></div>
+      </div>
+      <div class="mem" data-areas="stroke gait">
+        <p class="role" data-en="Collaborating Researcher">共同研究者</p>
+        <div>
+          <h4>吉川 大志</h4>
+        </div>
+        <p class="aff" data-en="Tohoku Bunka Gakuen University">東北文化学園大学</p>
+        <div class="chips"><span class="chip v" data-en="Clinical research">臨床研究</span></div>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-size:12.5px;color:var(--ink-3)" data-en="Studies are also run with co-investigators at Gunma University, Numata Neurosurgery &amp; Cardiovascular Hospital, Mejiro University and other partner sites.">このほか、群馬大学、沼田脳神経外科循環器科病院、目白大学 耳科学研究所クリニックなどの共同研究者とともに研究を実施しています。</p>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">Publications</p>
+      <h2 data-en="Papers, case reports and conference work">論文・学会業績</h2>
+      <p data-en="The complete record held on researchmap: 62 peer-reviewed papers, 158 conference presentations and invited talks. Underlined authors are lab members; titles link to the DOI where one exists.">researchmap に登録されている全業績です（査読付き論文 62 編、学会発表・招待講演 158 件）。下線は研究室メンバー、DOI のある論文はタイトルから原著へ移動できます。</p>
+    </div>
+
+    <div class="pubtools">
+      <div class="tabs" id="pubtabs" role="tablist">
+      <button type="button" role="tab" data-type="all" aria-selected="true" data-en="All">すべて</button>
+      <button type="button" role="tab" data-type="orig" aria-selected="false" data-en="Original articles (Intl.)">原著論文（国際誌）</button>
+      <button type="button" role="tab" data-type="case" aria-selected="false" data-en="Case reports">症例報告</button>
+      <button type="button" role="tab" data-type="jp" aria-selected="false" data-en="Japanese journals">国内誌</button>
+      <button type="button" role="tab" data-type="conf" aria-selected="false" data-en="Conference">学会発表</button>
+        <button type="button" role="tab" data-type="invited" aria-selected="false" data-en="Invited talks">招待講演</button>
+      </div>
+      <div class="pubsearch">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="5.4" stroke="currentColor" stroke-width="1.4"/><path d="M13.2 13.2L17 17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <input id="pubsearch" type="search" autocomplete="off" aria-label="Search publications">
+      </div>
+    </div>
+
+    <div class="publist" id="publist">
+
+      <article class="pub" data-type="invited" data-areas="stroke gait prognosis">
+        <p class="yr">2026<b>12</b></p>
+        <div>
+          <p class="ttl">脳卒中後の歩行自立を見据えた評価と理学療法介入</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">日本神経理学療法学会 群馬県地方会共催 第43回群馬神経系理学療法研究会 <span>招待講演, 2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="vestibular stroke">
+        <p class="yr">2026<b>10</b></p>
+        <div>
+          <p class="ttl">中枢前庭障害への挑戦 脳卒中診療に活かす前庭リハビリテーション</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">令和８年度東京都地域リハビリテーション支援事業 シリーズ企画 前庭リハビリテーションを知ろう <span>招待講演, 2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke gait prognosis">
+        <p class="yr">2026<b>10</b></p>
+        <div>
+          <p class="ttl">亜急性期脳卒中患者における自覚的視性垂直位の経時的変化と歩行自立度との関連</p>
+          <p class="au">原澤理周, 谷友太, 西須一紗, 柿間洋信, <u>五十嵐達也</u></p>
+          <p class="jr">第45回関東甲信越ブロック理学療法士学会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2026<b>10</b></p>
+        <div>
+          <p class="ttl">Body Lateropulsionに対する中殿筋への感覚閾値電気刺激の効果 ―シングルケースデザインによる検討―</p>
+          <p class="au">太田洸一, <u>五十嵐達也</u>, <u>山本直弥</u>, 丸山 祥</p>
+          <p class="jr">第45回関東甲信越ブロック理学療法士学会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2026<b>10</b></p>
+        <div>
+          <p class="ttl">脳卒中患者の静止立位における非対称性の経時的増加は左右COP動揺の低下と関連する−試行内変化量を用いた解析−</p>
+          <p class="au">阿部大樹, <u>五十嵐達也</u>, 山本智史</p>
+          <p class="jr">第45回関東甲信越ブロック理学療法士学会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait">
+        <p class="yr">2026<b>10</b></p>
+        <div>
+          <p class="ttl">立位および膝立ちからの側方へのステップ動作における筋活動の比較</p>
+          <p class="au">朝倉智之, 宮澤佳之, 萩原晃, 春日壮晃, <u>五十嵐達也</u>, 小林壮太</p>
+          <p class="jr">第45回関東甲信越ブロック理学療法士学会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="prognosis">
+        <p class="yr">2026<b>10</b></p>
+        <div>
+          <p class="ttl">地域在住高齢者を対象とした転倒リスク推定法の開発：既存計測法の高度化に向けたマーカーレス解析の応用</p>
+          <p class="au">西須一紗, <u>五十嵐達也</u>, 平野晋吾, 星野雄哉, <u>林翔太</u></p>
+          <p class="jr">第45回関東甲信越ブロック理学療法士学会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="prognosis">
+        <p class="yr">2026<b>10</b></p>
+        <div>
+          <p class="ttl">予後予測の実際</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">IMSグループ 医療法人社団 明芳会 高島平中央総合病院, 学術研修会 <span>招待講演, 2026</span></p>
+          <p class="chips"><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">亜急性期入院脳卒中患者におけるDynamic visual acuityの歩行速度依存性の検討</p>
+          <p class="au"><u>五十嵐達也</u>, <u>山本直弥</u>, 西須一紗, <u>林翔太</u>, 加茂智彦</p>
+          <p class="jr">第24回日本神経理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">亜急性期脳卒中者の転倒リスクを捉える新たな統合的歩行変動性指標：Gait Variability Indexの有用性</p>
+          <p class="au"><u>吉川大志</u>, <u>五十嵐達也</u></p>
+          <p class="jr">第44回東北理学療法学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">急性期テント下脳梗塞後のBody lateropulsion重症度と自覚的視性垂直位の関連と回復の多様性：多機関研究</p>
+          <p class="au">井上大聖, 福本 匠吾, 根津 利也, 西須 一紗, 平野 晋吾, 木村 駿志, 柴田 旺祐, 林 翔太, 五十嵐 達也, 植田 耕造, 塩崎 智之, 光武 翼</p>
+          <p class="jr">第24回日本神経理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke gait prognosis digital">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">SVV偏倚およびBody Lateropulsionの長期残存下に歩行自立に至った橋梗 塞例：VRアプリによるSVV評価を用いて</p>
+          <p class="au">林 宏紀、五十嵐 達也 、大沼 康子 、藤川 和輝 、西岡 優海 、荒川 達彌</p>
+          <p class="jr">第24回日本神経理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">足圧中心指標によるテント下脳卒中患者のBody Lateropulsion判別能の予備的検討 ―多施設共同前向き研究―</p>
+          <p class="au">福本匠吾, 井上大聖, 吉田麗華, 井川衛, 平野晋吾, 木村駿, <u>五十嵐達也</u>, <u>林翔太</u>, 植田耕造, 塩崎智之, 光武翼</p>
+          <p class="jr">第24回日本神経理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">テント下脳卒中患者における足圧中心周波数特性の探索的検討：Body Lateropulsion重症度別比較</p>
+          <p class="au">井川衛, 福本匠吾, 吉田麗華, 井上大聖, 平野晋吾, 木村駿, 岩田健吾, <u>五十嵐達也</u>, <u>林翔太</u>, 植田耕造, 塩崎智之, 光武翼</p>
+          <p class="jr">第24回日本神経理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">脳卒中後患者における遂行機能と歩行速度の関連に対する運動麻痺の修飾効果</p>
+          <p class="au">阿部大樹, <u>五十嵐達也</u>, 山本智史</p>
+          <p class="jr">第24回日本神経理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">脳卒中者の歩行獲得を予測するTWIST scoreのモデル更新</p>
+          <p class="au">宮田一弘, 武田廉, 古田島佳世, 高橋瑞刀, 秋山裕樹, <u>林翔太</u>, <u>五十嵐達也</u>, 田村俊太郎, 臼田滋</p>
+          <p class="jr">第24回日本神経理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">心不全併存急性期脳卒中患者における早期介入の安全性と有効性の検証</p>
+          <p class="au">田村俊太郎, 加茂智彦, <u>五十嵐達也</u>, 久保宏紀, 小林壮太, 大坪拓朗, 百崎良</p>
+          <p class="jr">第24回日本神経理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2026<b>09</b></p>
+        <div>
+          <p class="ttl">神経理学療法における意思決定支援ツールの開発から臨床活用まで</p>
+          <p class="au"><u>五十嵐達也</u>, 小林壮太, 齋藤拓之, 宮田一弘</p>
+          <p class="jr">第24回日本神経理学療法学会学術大会 公募型シンポジウム <span>2026</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2026<b>08</b></p>
+        <div>
+          <p class="ttl">延髄内側損傷後のBody lateropulsionにおける運動学的特性の経時的変化の特徴：症例報告</p>
+          <p class="au">井川 衛, 岩田 健吾, 五十嵐 達也</p>
+          <p class="jr">第39回中国ブロック理学療法士学会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="vestibular">
+        <p class="yr">2026<b>08</b></p>
+        <div>
+          <p class="ttl">前庭リハビリテーションの視点に基づく平衡機能の評価とアプローチ―加齢性・中枢性障害を中心に―</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">新ブラッシュアップ講座 (文京学院大学 リカレント教育) <span>招待講演, 2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke">
+        <p class="yr">2026<b>07</b></p>
+        <div>
+          <p class="ttl">Tract-based lesion mapping of quiet-standing postural control phenotypes in patients with subacute stroke</p>
+          <p class="au">Shingo Hirano, Atsushi Kawaguchi, <u>Tatsuya Igarashi</u>, Maiko Sakamoto, Hisato Nakazono, Takanori Taniguchi, Hiroyuki Inooka, Tsubasa Mitsutake</p>
+          <p class="jr">Scientific reports <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="vestibular">
+        <p class="yr">2026<b>06</b></p>
+        <div>
+          <p class="ttl">中枢神経疾患に対する前庭リハビリテーション -基礎知識と評価・治療の概説-</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">Saitama NeuroBridge vol. 4 (日本神経理学療法学会・埼玉地方会 研修会) <span>招待講演, 2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="gait">
+        <p class="yr">2026<b>06</b></p>
+        <div>
+          <p class="ttl">中枢神経疾患のバランスと歩行-アウトカムメジャーを活用した評価・理学療法-</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">神経系理学療法学演習（人間総合科学大学） <span>招待講演, 2026</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="case" data-areas="vestibular stroke">
+        <p class="yr">2026<b>06</b></p>
+        <div>
+          <p class="ttl">Longitudinal Changes in Static and Dynamic Subjective Visual Vertical Following Cerebellar Infarction: A Case Report</p>
+          <p class="au">Rin Sato, <u>Tatsuya Igarashi</u>, <u>Naoya Yamamoto</u></p>
+          <p class="jr">Journal of Rehabilitation Neurosciences <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="case" data-areas="vestibular stroke">
+        <p class="yr">2026<b>06</b></p>
+        <div>
+          <p class="ttl">A Case Report on Balance Progress in a Patient with Body Lateropulsion: Focusing on Vestibulo-Ocular Reflex and Subjective Visual Vertical</p>
+          <p class="au">Kazusa Saisu, <u>Tatsuya Igarashi</u>, <u>Shota Hayashi</u>, Tomohiko Kamo</p>
+          <p class="jr">Progress in Rehabilitation Medicine <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke">
+        <p class="yr">2026<b>06</b></p>
+        <div>
+          <p class="ttl">Validation and Distribution Characteristics of the Grading of Lateropulsion in Patients With Infratentorial Stroke: A Preliminary Study</p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Shingo Hirano, Taisei Inoue, Shogo Fukumoto, Mamoru Igawa, Reika Yoshida, <u>Toshiya Nezu</u>, Osuke Shibata, <u>Shota Hayashi</u>, Kozo Ueta, Tsubasa Mitsutake</p>
+          <p class="jr">Progress in Rehabilitation Medicine <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular">
+        <p class="yr">2026<b>05</b></p>
+        <div>
+          <p class="ttl">大腿骨近位部骨折患者における前庭機能と身体機能の検討</p>
+          <p class="au">鈴木 駿介, 根津 利也, 五十嵐 達也</p>
+          <p class="jr">第5回日本前庭理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2026<b>05</b></p>
+        <div>
+          <p class="ttl">脳卒中患者における SVV の平均偏倚および施行間変動性と Trail Making Test との関連</p>
+          <p class="au">根津 利也, 鈴木 駿介, 五十嵐 達也</p>
+          <p class="jr">第5回日本前庭理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2026<b>05</b></p>
+        <div>
+          <p class="ttl">テント下脳卒中患者6例におけるSubjective Visual Verticalと頭部，体幹側方傾斜の方位性</p>
+          <p class="au">岩田健吾, 井川衛, <u>五十嵐達也</u>, 植田耕造, 光武翼</p>
+          <p class="jr">第5回日本前庭理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2026<b>05</b></p>
+        <div>
+          <p class="ttl">脳卒中患者の静止立位におけるtransient指標の信頼性と妥当性：姿勢制御の時間的変化を捉える新たな指標</p>
+          <p class="au">阿部大樹, <u>五十嵐達也</u>, 山本智史</p>
+          <p class="jr">第5回日本前庭理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2026<b>05</b></p>
+        <div>
+          <p class="ttl">テント下脳梗塞後Body Lateropulsionの方向特性-自覚的視性垂直位との一致性と方向反転：多機関共同研究-</p>
+          <p class="au">井上 大聖, 福本 匠吾, 根津 利也, 西須 一紗, 平野 晋吾, 木村 駿志, 柴田 旺祐, 林 翔太, 五十嵐 達也, 植田 耕造, 塩崎 智之, 光武 翼</p>
+          <p class="jr">第5回日本前庭理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke prognosis">
+        <p class="yr">2026<b>05</b></p>
+        <div>
+          <p class="ttl">亜急性期テント下脳梗塞患者における中枢性めまいの早期改善を予測する新たな神経ネットワー ク指標: Disconnection score による検討</p>
+          <p class="au">平野晋吾, 光武翼, <u>五十嵐達也</u>, 坂本麻衣子, 中薗寿人, 谷口隆憲, 猪岡弘行, 川口淳</p>
+          <p class="jr">第5回日本前庭理学療法学会学術大会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="prognosis">
+        <p class="yr">2026<b>05</b></p>
+        <div>
+          <p class="ttl">鍛えるのは筋肉じゃない 眠った感覚だ</p>
+          <p class="au">山川青空海, <u>五十嵐達也</u></p>
+          <p class="jr">転倒予防セミナー@東洋鋼鈑株式会社 <span>招待講演, 2026</span></p>
+          <p class="chips"><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="gait">
+        <p class="yr">2026<b>03</b></p>
+        <div>
+          <p class="ttl">歩行姿勢障害における次世代の神経理学療法-病態の可視化から新たな臨床展開を掴む-」(ファシリテーター)</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">日本神経理学療法学会第8回SIGs参加型フォーラム2026 <span>招待講演, 2026</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait digital">
+        <p class="yr">2026<b>03</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1016/j.gaitpost.2025.110067" target="_blank" rel="noopener">Development and validity of composite scores for the instrumented-modified Clinical Test of Sensory Interaction in Balance in inpatients with subacute stroke</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, <u>Shota Hayashi</u>, Shingo Hirano, Kazusa Saisu, Hironobu Kakima, Yuta Tani, Hiroyuki Inooka</p>
+          <p class="jr">Gait &amp; Posture <span>125: 110067, 2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait digital">
+        <p class="yr">2026<b>02</b></p>
+        <div>
+          <p class="ttl">歩容異常を呈した被殻出血症例の治療経過と運動学的特徴：加速度計・関節角度による検討</p>
+          <p class="au">代田将弘, <u>五十嵐達也</u>, 平野晋吾, 猪岡弘行</p>
+          <p class="jr">JSNPT SAITAMA NeuroBridge 日本神経理学療法学会 埼玉地方会 第2回症例相談会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2026<b>02</b></p>
+        <div>
+          <p class="ttl">VRベースの視運動刺激が動的バランスに与える影響 ― 回復期小脳梗塞例に対するシングルケースデザイン―</p>
+          <p class="au">太田 洸一, 五十嵐 達也, 山本 直弥, 尾川 雄紀</p>
+          <p class="jr">第42回神奈川県理学療法学会 <span>2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="">
+        <p class="yr">2026<b>02</b></p>
+        <div>
+          <p class="ttl">神経理学療法における尺度開発研究と臨床応用</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">第36回日本神経理学療法学会 サテライトカンファレンス in KOBE <span>招待講演, 2026</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke prognosis">
+        <p class="yr">2026</p>
+        <div>
+          <p class="ttl">Diagnostic and prognostic accuracy of Berg Balance Scale and Mini-Balance Evaluation Systems Test in individuals with stroke: A Systematic review and meta-analysis</p>
+          <p class="au">Sota Kobayashi, Tomohiko Kamo, Hirofumi Ogihara, Shuntaro Tamura, Hiroki Kubo, <u>Tatsuya Igarashi</u>, Hiroyuki Saito, Yoichi Kaizu, Kazuhiro Miyata</p>
+          <p class="jr">Physiotherapy Theory and Practice <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait prognosis">
+        <p class="yr">2026</p>
+        <div>
+          <p class="ttl">Estimating Thresholds for Walking Independence After Stroke: A Comparison of Item Response and Classical Test Theories</p>
+          <p class="au">Tomoyuki Shinohara, Ryohei Araki, Hiroki Iwamoto, <u>Tatsuya Igarashi</u>, Satoshi Hasegawa, Kazuhiro Miyata</p>
+          <p class="jr">Physiotherapy Theory and Practice IPTP <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="case" data-areas="vestibular">
+        <p class="yr">2026</p>
+        <div>
+          <p class="ttl">Effect of Outpatient and Home-based Vestibular Rehabilitation on Balance Impairments in a Patient with Chronic Inflammatory Demyelinating Polyneuropathy: A Case Report</p>
+          <p class="au">Daiki Abe, <u>Tatsuya Igarashi</u>, Satoshi Yamamoto</p>
+          <p class="jr">Physical Therapr Reserach <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="vestibular stroke digital">
+        <p class="yr">2026</p>
+        <div>
+          <p class="ttl">Center-of-Pressure Responses to Optokinetic Stimulation in Patients With Stroke and Age-Matched Healthy Adults: Identifying Sensitive Measures—An Exploratory Study</p>
+          <p class="au"><u>Shota Hayashi</u>, Tomohiko Kamo, Shingo Hirano, Naoya Takahashii, Kazusa Saisu, Takechiyo Honma, Hironobu Kakima, Yuta Tani, Kazuya Hoshino, Kazutaka Kobayashi, Hirofumi Ogihara, <u>Tatsuya Igarashi</u>, Akira Kimura</p>
+          <p class="jr">Topics in Stroke Rehabilitation <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="case" data-areas="stroke">
+        <p class="yr">2026</p>
+        <div>
+          <p class="ttl">慢性期脳卒中患者の下肢痙縮に対するボツリヌス療法と体重免荷式トレッドミル併用トレーニングの有用性：症例報告</p>
+          <p class="au">千葉大輔, <u>五十嵐達也</u>, <u>山本直弥</u>, 榊原時生</p>
+          <p class="jr">支援工学理学療法学会誌 <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait prognosis">
+        <p class="yr">2026</p>
+        <div>
+          <p class="ttl">External validation of the walking independence prognostic model TWIST score after stroke: A multicenter, prospective cohort study</p>
+          <p class="au">Kazuhiro Miyata, Ren Takeda, Kayo Kotajima, Mizuki Takahashi, Hiroki Akiyama, <u>Shota Hayashi</u>, <u>Tatsuya Igarashi</u>, Shuntaro Tamura, Shigeru Usuda</p>
+          <p class="jr">Neurorehabilitation and Neural Repair <span>accepted, 2026</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="vestibular">
+        <p class="yr">2026</p>
+        <div>
+          <p class="ttl">末梢・中枢前庭障害に対する前庭リハビリテーション：エビデンスに基づく病態解釈と介入</p>
+          <p class="au"><u>五十嵐達也</u>, 伏木宏彰</p>
+          <p class="jr">理学療法-臨床・研究・教育, in press <span>招待講演, 2026</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="vestibular stroke">
+        <p class="yr">2025<b>12</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1016/j.jns.2025.125663" target="_blank" rel="noopener">Early improvement in vertigo intensity after subacute infratentorial infarction relates to vestibulocerebellar network damage and balance recovery: A retrospective disconnectome study</a></p>
+          <p class="au">Shingo Hirano, <u>Tatsuya Igarashi</u>, Atsushi Kawaguchi, Maiko Sakamoto, Hisato Nakazono, Takanori Taniguchi, Hiroyuki Inooka, Tsubasa Mitsutake</p>
+          <p class="jr">Journal of the Neurological Sciences <span>479: 125663, 2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2025<b>12</b></p>
+        <div>
+          <p class="ttl">低身体機能を呈する高齢心不全患者の身体機能改善に関連する機能特性の検討</p>
+          <p class="au">田村俊太郎, 猪熊正美, 服部将也, 谷友太, 伊藤祐輝, 岡﨑秦, <u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">第9回日本循環器理学療法学会学術大会 <span>2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2025<b>11</b></p>
+        <div>
+          <p class="ttl">脳卒中症例に対するGait Disorientation Testの信頼性の検討</p>
+          <p class="au">西須 一紗, 五十嵐 達也, 林 翔太, 遠藤 樹, 田村 美依奈, 加茂 智彦</p>
+          <p class="jr">第44回関東甲信越ブロック理学療法士学会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2025<b>11</b></p>
+        <div>
+          <p class="ttl">心不全患者における入院中のShort Physical Performance Batteryの変化 -Alluvial Plot(沖積図)を用いて</p>
+          <p class="au">谷友太, 田村俊太郎, 猪熊正美, <u>五十嵐達也</u>, 服部将也, 伊藤祐輝, 岡崎蓁, 宮田一弘</p>
+          <p class="jr">第44回関東甲信越ブロック理学療法士学会 <span>2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2025<b>11</b></p>
+        <div>
+          <p class="ttl">介助歩行を要する入院中の亜急性期脳卒中患者におけるTrunk Impairment Scaleの反応性と最小重要変化量の推定</p>
+          <p class="au"><u>山本直弥</u>, <u>五十嵐達也</u>, 佐藤凜, 山岡洸, 丸山祥</p>
+          <p class="jr">第44回関東甲信越ブロック理学療法士学会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2025<b>11</b></p>
+        <div>
+          <p class="ttl">亜急性期入院脳卒中患者におけるバランス課題分析による退院6ヶ月以内の転倒リスクの特定：Mini-BESTestによる検討</p>
+          <p class="au">五十嵐 達也, 谷 友太, 柿間 洋信, 西須 一紗, 林 翔太</p>
+          <p class="jr">第44回関東甲信越ブロック理学療法士学会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular">
+        <p class="yr">2025<b>11</b></p>
+        <div>
+          <p class="ttl">めまい平衡障害に対する前庭リハビリテーションの評価・治療の実際</p>
+          <p class="au">加茂智彦, 荻原啓文, <u>五十嵐達也</u>, 川村愛実, 塩崎智之, 田中亮造, 藤田大輝</p>
+          <p class="jr">第84回日本めまい平衡医学会,前庭リハビリハンズオンセミナー <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2025<b>11</b></p>
+        <div>
+          <p class="ttl">脳卒中後の姿勢定位障害：Body lateropulsion</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">一般社団法人日本前庭理学療法学会 第3回前庭理学療法実践セミナー <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="">
+        <p class="yr">2025<b>11</b></p>
+        <div>
+          <p class="ttl">システムで捉える姿勢制御障害の評価とアプローチ</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">新ブラッシュアップ講座 (文京学院大学 リカレント教育) <span>招待講演, 2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1080/09593985.2025.2581133" target="_blank" rel="noopener">Examination of functional characteristics related to physical function improvement in older adults with heart failure and low physical function</a></p>
+          <p class="au">Shuntaro Tamura, Masami Inokuma, Masaya Hattori, Yuta Tani, Yuki Ito, Shin Okazaki, <u>Tatsuya Igarashi</u>, Kazuhiro Miyata</p>
+          <p class="jr">Physiotherapy Theory and Practice <span>: 1&ndash;8, 2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">若年重度脳卒中症例における歩行自立予後の検討：TWISTモデルとの比較からの臨床的示唆</p>
+          <p class="au">田村美依奈, 谷友太, 西須一紗, 柿間洋信, <u>五十嵐達也</u></p>
+          <p class="jr">第32回群馬県理学療法士学会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">肥満により長下肢装具の適応が困難な脳卒中片麻痺症例に対する免荷式歩行器を用いた早期歩行練習の試み</p>
+          <p class="au">小林拓歩, 柿間洋信, 谷友太, 西須一紗, <u>五十嵐達也</u></p>
+          <p class="jr">第32回群馬県理学療法士学会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="prognosis">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">重症心筋梗塞後の低心拍出症候群による長期臥床よりデコンディショニングを呈した若年患者に運動療法を実施し自宅退院が可能となった症例</p>
+          <p class="au">鈴木渚, 谷友太, 伊藤祐輝, <u>五十嵐達也</u></p>
+          <p class="jr">第32回群馬県理学療法士学会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait prognosis">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">術前Short Physical Performance Batteryと心臓外科手術後の歩行自立日数の関連：生存時間解析による検討</p>
+          <p class="au">谷友太, 原澤理周, 大内陽葉里, 遠藤樹, <u>林翔太</u>, <u>五十嵐達也</u></p>
+          <p class="jr">第32回群馬県理学療法士学会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">Body Lateropulsionを呈した急性期延髄梗塞症例に対する体性感覚フィードバックを活用した課題指向的介入の試み</p>
+          <p class="au">髙橋直哉, 西須一紗, 谷友太, 柿間洋信, <u>林翔太</u>, <u>五十嵐達也</u></p>
+          <p class="jr">第32回群馬県理学療法士学会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">亜急性期視床出血に伴う感覚性運動失調を呈した症例に対する視覚的フィードバックを考慮した介入経過</p>
+          <p class="au">大島日菜子, 西須一紗, 柿間洋信, 谷友太, <u>五十嵐達也</u></p>
+          <p class="jr">第32回群馬県理学療法士学会 <span>2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">亜急性期入院心不全患者における5回立ち上がりテストの意義のある最小変化量の検討</p>
+          <p class="au">伊藤祐輝、谷友太、五十嵐達也、橋本亜佐美、柿間洋信、武田簾、宮田一弘</p>
+          <p class="jr">第32回群馬県理学療法士学会 <span>2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">脳卒中者におけるBerg Balance Scale を用いた診断予測精度―システマティックレビュー・メタアナリシス―</p>
+          <p class="au">小林壮太, 加茂智彦, 荻原啓文, 田村俊太郎, 齋藤拓之, 久保宏紀, <u>五十嵐達也</u>, 海津陽一, 宮田一弘</p>
+          <p class="jr">第23回日本神経理学療法学会学術大会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">亜急性期脳卒中患者における空間ナビゲーション能力と前庭・運動・バランス機能との関連性</p>
+          <p class="au">西須 一紗, 五十嵐 達也, 加茂 智彦</p>
+          <p class="jr">第23回日本神経理学療法学会学術大会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">回復期脳卒中患者の歩幅と歩行率に基づく歩行戦略の違いと機能的な特徴：探索的研究</p>
+          <p class="au">阿部大樹, <u>五十嵐達也</u>, 山本智史</p>
+          <p class="jr">第23回日本神経理学療法学会学術大会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">本邦の神経理学療法領域におけるバランスアウトカム指標の使用状況とその障壁に関するアンケート調査研究</p>
+          <p class="au"><u>五十嵐達也</u>, 冨田洋介, 植田耕造, 須田祐貴, 藤井慎太郎, 青木修, 塩崎智之, 長谷川直哉, 谷川広樹, 中西康二, 嶋﨑健一, 萬井太規</p>
+          <p class="jr">第23回日本神経理学療法学会学術大会 <span>2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">亜急性期脳卒中患者におけるCOP指標を用いたinstrumented mCTSIB複合スコアの開発と妥当性の検討</p>
+          <p class="au">五十嵐 達也, 林 翔太, 平野 晋吾, 西須 一紗, 柿間 洋信, 谷 友太, 猪岡 弘行, 荻原 啓文, 加茂 智彦</p>
+          <p class="jr">第23回日本神経理学療法学会学術大会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">Gaussian混合モデルを用いた脳卒中患者のSVV特性の分類とバランス指標との関連性</p>
+          <p class="au"><u>林翔太</u>, 加茂智彦, <u>五十嵐達也</u>, 荻原啓文, 平野晋吾, 西須一紗, 高橋直哉, 柿間洋信, 本間竹千代, 木村朗</p>
+          <p class="jr">第23回日本神経理学療法学会学術大会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">脳卒中者の歩行自立判断のカットオフ値は、Classical Test TheoryとItem Response Theoryで異なるか</p>
+          <p class="au">篠原智行, 荒木綾平, 岩本紘樹, <u>五十嵐達也</u>, 長谷川智, 宮田一弘</p>
+          <p class="jr">第23回日本神経理学療法学会学術大会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">右半側空間無視症例に対する輪投げを用いたリーチ動作練習の効果―ABAシングルケースデザインによる検討―</p>
+          <p class="au">鈴木駿介, <u>五十嵐達也</u>, <u>根津利也</u>, 網本和</p>
+          <p class="jr">第23回日本神経理学療法学会学術大会 <span>2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2025<b>10</b></p>
+        <div>
+          <p class="ttl">脳卒中患者の歩行に関連するBerg Balance Scaleのカットオフ値の外的検証</p>
+          <p class="au">田村俊太郎, 海津陽一, 小林壮太, 荻原啓文, <u>五十嵐達也</u>, 金居督之, 齋藤拓之, 齋藤翔太, 谷友太, 長谷川智</p>
+          <p class="jr">第23回日本神経理学療法学会学術大会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2025<b>09</b></p>
+        <div>
+          <p class="ttl">急性期入院脳卒中患者におけるVRベース法による自覚的視性垂直位計測の信頼性と妥当性：予備的研究</p>
+          <p class="au"><u>五十嵐達也</u>, <u>林翔太</u>, <u>根津利也</u>, 鈴木駿介, 平野晋吾, 西須一紗, 荻原啓文, 加茂智彦</p>
+          <p class="jr">第4回先端技術・福祉用具合同フォーラム <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="">
+        <p class="yr">2025<b>08</b></p>
+        <div>
+          <p class="ttl">自施設の理学療法の質向上に活かす研究活動の提案 -施設独自のPDCAサイクルを通して-</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">IMSグループ 医療法人社団 明芳会 高島平中央総合病院, 学術研修会 <span>招待講演, 2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="">
+        <p class="yr">2025<b>08</b></p>
+        <div>
+          <p class="ttl">冠動脈バイパス術後の身体活動量評価と運動指導の試み─頻回な外来通院が困難であった症例─</p>
+          <p class="au">髙橋直哉, <u>五十嵐達也</u>, 橋本亜佐美, 小林壮太, 森下篤</p>
+          <p class="jr">循環器理学療法学 <span>早期公開, 2025</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular digital">
+        <p class="yr">2025<b>08</b></p>
+        <div>
+          <p class="ttl">Effects of VR-based optokinetic stimulation on head and trunk postural sway on a sinusoidal moving platform</p>
+          <p class="au"><u>Tatsuya Igarashi</u>, <u>Shota Hayashi</u>, Shingo Hirano, Asafumi Suzuki, Megumi Kataura, Daito Kato, Masaru Okoba</p>
+          <p class="jr">9th Asia-Oceanian Conference of Physical and Rehabilitation Medicine, in conjunction with the 16th Annual Malaysian Rehabilitation Medicine Conference <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke digital">
+        <p class="yr">2025<b>08</b></p>
+        <div>
+          <p class="ttl">Effects of visual stimuli on static balance: A frequency analysis comparing older adults and patients with stroke</p>
+          <p class="au"><u>Shota Hayashi</u>, Tomohiko Kamo, Hirofumi Ogihara, <u>Tatsuya Igarashi</u>, Kazusa Saisu</p>
+          <p class="jr">9th Asia-Oceanian Conference of Physical and Rehabilitation Medicine, in conjunction with the 16th Annual Malaysian Rehabilitation Medicine Conference <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="stroke prognosis">
+        <p class="yr">2025<b>08</b></p>
+        <div>
+          <p class="ttl">脳卒中理学療法におけるアウトカムメジャーの活用 -忙しい臨床で効果的に病態解釈と意思決定・予後予測をするためのTips-</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">IMSグループ 医療法人社団 明芳会 高島平中央総合病院 研修会 <span>招待講演, 2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke">
+        <p class="yr">2025<b>07</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1080/09593985.2025.2529520" target="_blank" rel="noopener">Examining the characteristics of balance dysfunction in patients with stroke using Item response theory</a></p>
+          <p class="au">Tomoyuki Shinohara, Ryohei Araki, Hiroki Iwamoto, <u>Tatsuya Igarashi</u>, Satoshi Hasegawa, Kazuhiro Miyata</p>
+          <p class="jr">Physiotherapy Theory and Practice <span>41(12): 2549&ndash;2559, 2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke prognosis">
+        <p class="yr">2025<b>07</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1177/10538135251356173" target="_blank" rel="noopener">Identifying Fall Risk within 6 Months Post-Discharge Through Balance Tasks Analysis in Inpatients with Subacute Stroke: Prospective Cohort Study</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Yuta Tani, Hironobu Kakima, <u>Shota Hayashi</u></p>
+          <p class="jr">NeuroRehabilitation <span>57(2): 287&ndash;296, 2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="vestibular digital">
+        <p class="yr">2025<b>06</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1080/00222895.2025.2523441" target="_blank" rel="noopener">Influences of VR-Based Optokinetic Stimulation on Head and Trunk Instability on a Sinusoidal Moving Platform</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, <u>Shota Hayashi</u>, Shingo Hirano</p>
+          <p class="jr">Journal of Motor Behavior <span>57(5): 546&ndash;553, 2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="digital">
+        <p class="yr">2025<b>06</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1111/ggi.70091" target="_blank" rel="noopener">Impact of frailty risk on postoperative activities of daily living and in‐hospital events in older patients with hydrocephalus using a nationwide Japanese database</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Tomohiko Kamo, Kazuhiro Miyata, Shuntaro Tamura, Sota Kobayashi, Yoichi Kaizu, Hiroyuki Saito, Hiroki Kubo, Ryo Momosaki</p>
+          <p class="jr">Geriatrics &amp; Gerontology International <span>25(7): 960&ndash;966, 2025</span></p>
+          <p class="chips"><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="prognosis digital">
+        <p class="yr">2025<b>06</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1016/j.clnesp.2025.03.041" target="_blank" rel="noopener">Impact of post-hospitalization dysphagia on dependence in activities of daily living at discharge in older adults with hip fracture: A nationwide inpatient database study</a></p>
+          <p class="au">Shuntaro Tamura, Tomohiko Kamo, Sota Kobayashi, Hiroyuki Saito, <u>Tatsuya Igarashi</u>, Yoichi Kaizu, Kazuhiro Miyata, Hiroki Kubo, Hirofumi Ogihara, Ryo Momosaki</p>
+          <p class="jr">Clinical Nutrition ESPEN <span>67: 355&ndash;361, 2025</span></p>
+          <p class="chips"><span class="chip">Prognosis</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2025<b>06</b></p>
+        <div>
+          <p class="ttl">延髄外側梗塞後の3 症例におけるBody lateropulsion の重症度とSVV(両眼・単眼)の縦断的経過</p>
+          <p class="au"><u>根津利也</u>, 鈴木駿介, <u>五十嵐達也</u></p>
+          <p class="jr">第4回日本前庭理学療法研究会学術集会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2025<b>06</b></p>
+        <div>
+          <p class="ttl">左小脳梗塞症例に対する前庭リハビリテーション後のバランス機能と前庭症状の経過</p>
+          <p class="au">平野晋吾, <u>五十嵐達也</u>, 猪岡弘行, 光武翼</p>
+          <p class="jr">第4回日本前庭理学療法研究会学術集会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular gait">
+        <p class="yr">2025<b>06</b></p>
+        <div>
+          <p class="ttl">外来と自主トレーニングでの前庭リハビリテーションにより姿勢制御能力と歩行能力が向上した慢性炎症性脱髄性多発神経炎の一症例</p>
+          <p class="au">阿部大樹, <u>五十嵐達也</u>, 山本智史</p>
+          <p class="jr">第4回 日本前庭理学療法研究会学術集会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2025<b>06</b></p>
+        <div>
+          <p class="ttl">左橋損傷後のBody lateropulsion症例における前庭動眼反射および自覚的視性垂直位に着目した理学療法によるバランス能力の変化</p>
+          <p class="au">西須一紗, <u>五十嵐達也</u>, 加茂智彦</p>
+          <p class="jr">第4回日本前庭理学療法研究会学術集会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="vestibular">
+        <p class="yr">2025<b>06</b></p>
+        <div>
+          <p class="ttl">前庭リハビリテーションにおけるスマートフォン技術の活用</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">Medical Science Digest Vol 51 (7) 臨時増刊号 <span>招待講演, 2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="vestibular digital">
+        <p class="yr">2025<b>05</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1177/03010066251342006" target="_blank" rel="noopener">Effects of subjective visual verticality and visual dependence on balance function in older adults using a smartphone-based virtual reality system.</a></p>
+          <p class="au"><u>Shota Hayashi</u>, Tomohiko Kamo, Hirofumi Ogihara, Yuta Tani, Kazuya Hoshino, Kazutaka Kobayashi, <u>Tatsuya Igarashi</u>, Akira Kimura</p>
+          <p class="jr">Perception <span>54(9): 674&ndash;688, 2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="vestibular stroke">
+        <p class="yr">2025<b>04</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.7759/cureus.83163" target="_blank" rel="noopener">Progress in Balance Function and Vestibular Symptoms Following Vestibular Rehabilitation in a Patient With Left Cerebellar Infarction</a></p>
+          <p class="au">Shingo Hirano, <u>Tatsuya Igarashi</u>, Hiroyuki Inooka, Tsubasa Mitsutake</p>
+          <p class="jr">Cureus <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait">
+        <p class="yr">2025<b>04</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.7759/cureus.82275" target="_blank" rel="noopener">Estimating the Responsiveness and Minimal Important Change of the Trunk Impairment Scale in Inpatients With Subacute Stroke Requiring Dependent Ambulation.</a></p>
+          <p class="au"><u>Naoya Yamamoto</u>, <u>Tatsuya Igarashi</u>, Rin Sato, Hikaru Yamaoka, Sho Maruyama</p>
+          <p class="jr">Cureus <span>17(4): e82275, 2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="prognosis digital">
+        <p class="yr">2025<b>04</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1080/09593985.2024.2371027" target="_blank" rel="noopener">Development and internal validation of a clinical prediction model to predict independence in daily living at discharge for patients with heart failure: analysis using a Japanese national inpatient database real-world dataset.</a></p>
+          <p class="au">Shuntaro Tamura, Tomohiko Kamo, Kazuhiro Miyata, <u>Tatsuya Igarashi</u>, Ryo Momosaki</p>
+          <p class="jr">Physiotherapy theory and practice <span>41(4): 741&ndash;751, 2025</span></p>
+          <p class="chips"><span class="chip">Prognosis</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular">
+        <p class="yr">2025<b>03</b></p>
+        <div>
+          <p class="ttl">実践に活かす！前庭リハビリテーションの評価と治療</p>
+          <p class="au">加茂智彦, 荻原啓文, <u>五十嵐達也</u>, 塩崎智之</p>
+          <p class="jr">2024年度 前庭理学療法研究会ハンズオンセミナー <span>2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="vestibular stroke">
+        <p class="yr">2025<b>02</b></p>
+        <div>
+          <p class="ttl">左小脳出血による回転性めまいと動作時のふらつきが慢性化した一症例</p>
+          <p class="au">平野晋吾, <u>五十嵐達也</u>, 猪岡弘行</p>
+          <p class="jr">Saitama NeuroBridge vol.2 『第1回 症例相談会』 <span>招待講演, 2025</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke gait">
+        <p class="yr">2025</p>
+        <div>
+          <p class="ttl">足関節底背屈筋の双方に対する電気刺激が急性期脳卒中患者の歩行速度に及ぼす影響：シングルケースデザイン</p>
+          <p class="au">伊藤祐輝, <u>五十嵐達也</u></p>
+          <p class="jr">理学療法群馬 <span>accepted, 2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke">
+        <p class="yr">2025<b>01</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.7759/cureus.77201" target="_blank" rel="noopener">Effect of Weight-Shifting Practice Using Auditory Feedback on Postural Control in Patients With Body Lateropulsion: A Single-Case Experimental Design.</a></p>
+          <p class="au">Daiki Abe, <u>Tatsuya Igarashi</u>, Satoshi Yamamoto, Yohei Tomioka</p>
+          <p class="jr">Cureus <span>17(1): e77201, 2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke gait">
+        <p class="yr">2025</p>
+        <div>
+          <p class="ttl">失調性歩行を呈した亜急性期橋梗塞例に対するリズム音刺激を用いた歩行練習の効果：シングルケースデザイン</p>
+          <p class="au">岡村大地, <u>五十嵐達也</u></p>
+          <p class="jr">理学療法群馬 <span>accepted, 2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2025<b>01</b></p>
+        <div>
+          <p class="ttl">急性期脳卒中患者における退院時の階段昇降動作能力を予測するClinical Prediction Modelの開発と検証</p>
+          <p class="au">五十嵐 達也, 柿間 洋信, 谷 友太, 西須 一紗, 平野 晋吾, 林 翔太</p>
+          <p class="jr">第32回埼玉県理学療法学会 <span>2025</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="vestibular digital">
+        <p class="yr">2024<b>12</b></p>
+        <div>
+          <p class="ttl">スマホアプリを使用した自覚的視性垂直位（subjective visual vertical：SVV）測定</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">関西リハビリテーション病院 院内研修会 <span>招待講演, 2024</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="vestibular">
+        <p class="yr">2024<b>12</b></p>
+        <div>
+          <p class="ttl">脳血管疾患における前庭機能障害の基礎・評価・治療</p>
+          <p class="au">西須一紗, <u>五十嵐達也</u>, 加茂智彦</p>
+          <p class="jr">利根沼田リハビリテーション研究会 <span>招待講演, 2024</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="vestibular digital">
+        <p class="yr">2024<b>12</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1177/00315125241292094" target="_blank" rel="noopener">Test-Retest Reliability of Dynamic Subjective Visual Vertical and Visual Dependency in Older Adults Using Virtual Reality Methods.</a></p>
+          <p class="au"><u>Shota Hayashi</u>, Tomohiko Kamo, Hirofumi Ogihara, Yuta Tani, Kazuya Hoshino, Kazutaka Kobayashi, <u>Tatsuya Igarashi</u>, Akira Kimura</p>
+          <p class="jr">Perceptual and motor skills <span>131(6): 2069&ndash;2084, 2024</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait">
+        <p class="yr">2024<b>10</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1002/pri.2119" target="_blank" rel="noopener">Estimation of minimal clinically important difference for 6-minute walking distance in patients with acute stroke using anchor-based methods and credibility instruments.</a></p>
+          <p class="au"><u>Shota Hayashi</u>, Ren Takeda, Kazuhiro Miyata, Takamitsu Iizuka, <u>Tatsuya Igarashi</u>, Shigeru Usuda</p>
+          <p class="jr">Physiotherapy research international : the journal for researchers and clinicians in physical therapy <span>29(4): e2119, 2024</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2024<b>10</b></p>
+        <div>
+          <p class="ttl">自施設の急性期脳卒中患者を対象とした転帰先を予測するモデルの時間的検証</p>
+          <p class="au">柿間 洋信, 谷 友太, 遠藤 樹, 林 翔太, 五十嵐 達也</p>
+          <p class="jr">第31回群馬県理学療法士学会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2024<b>10</b></p>
+        <div>
+          <p class="ttl">Brief-Balance Evaluation Systems Testによるバランス機能の一次元性 ―複数母集団での検証―</p>
+          <p class="au">篠原智行, 荒木綾平, 岩本紘樹, <u>五十嵐達也</u>, 長谷川智, 宮田一弘</p>
+          <p class="jr">第31回群馬県理学療法士学会 <span>2024</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="digital">
+        <p class="yr">2024<b>10</b></p>
+        <div>
+          <p class="ttl">フレイルリスクは高齢水頭症患者の術後の日常生活活動に影響する：DPCデータベースを用いた傾向スコア解析</p>
+          <p class="au"><u>五十嵐達也</u>, 加茂智彦, 宮田一弘, 田村俊太郎, 小林壮太, 海津陽一, 齋藤拓之, 久保宏紀, 百崎良</p>
+          <p class="jr">第 43回関東甲信越ブロック理学療法士学会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2024<b>10</b></p>
+        <div>
+          <p class="ttl">脳卒中者の静止立位時における姿勢制御特性の検討―空間的変数と時間的変数に着目したサブタイプ分類―</p>
+          <p class="au">平野晋吾, <u>五十嵐達也</u>, 猪岡弘行</p>
+          <p class="jr">第 43回関東甲信越ブロック理学療法士学会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2024<b>10</b></p>
+        <div>
+          <p class="ttl">足関節底背屈筋の双方に対する電気刺激が急性期脳卒中患者の歩行速度に及ぼす影響：症例報告</p>
+          <p class="au">伊藤祐輝, <u>五十嵐達也</u></p>
+          <p class="jr">第 43回関東甲信越ブロック理学療法士学会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke">
+        <p class="yr">2024<b>10</b></p>
+        <div>
+          <p class="ttl">Wallenberg症候群とlateropulsionが出現した症例における自覚的視性垂直位、バランス能力の縦断的経過</p>
+          <p class="au">遠藤樹, 谷友太, 西須一紗, <u>五十嵐達也</u></p>
+          <p class="jr">第43回関東甲信越ブロック理学療法士学会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="">
+        <p class="yr">2024<b>09</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1080/09593985.2023.2232014" target="_blank" rel="noopener">Minimal clinically important difference in 6-minute walk distance estimated by multiple methods in inpatients with subacute cardiovascular disease.</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Kazuhiro Miyata, Shuntaro Tamura, Tomohiro Otani, Takamitsu Iizuka, Shigeru Usuda</p>
+          <p class="jr">Physiotherapy theory and practice <span>40(9): 1981&ndash;1989, 2024</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2024<b>09</b></p>
+        <div>
+          <p class="ttl">脳卒中者のバランス機能障害に特異性はあるのか －項目反応理論を用いた考察－</p>
+          <p class="au">篠原智行, 荒木綾平, 岩本紘樹, <u>五十嵐達也</u>, 長谷川智, 宮田一弘</p>
+          <p class="jr">第22回日本神経理学療法学会学術大会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2024<b>09</b></p>
+        <div>
+          <p class="ttl">脳卒中患者における歩行自立度を予測するTWIST toolの外的検証</p>
+          <p class="au">岩村佳世, 武田廉, 高橋瑞刀, <u>五十嵐達也</u>, 秋山裕樹, <u>林翔太</u>, 宮田一弘, 和田直樹, 臼田滋</p>
+          <p class="jr">第22回日本神経理学療法学会学術大会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2024<b>09</b></p>
+        <div>
+          <p class="ttl">脳卒中者の発症6か月後の歩行自立を予測するAustralian modelの外部検証</p>
+          <p class="au">宮田一弘, 武田廉, 岩村佳世, 高橋瑞刀, 秋山祐樹, <u>林翔太</u>, <u>五十嵐達也</u>, 臼田滋</p>
+          <p class="jr">第22回日本神経理学療法学会学術大会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="prognosis">
+        <p class="yr">2024<b>09</b></p>
+        <div>
+          <p class="ttl">半側空間無視に対するPoner課題の判別精度ー内発的注意条件と外発的注意条件に着目した検証ー</p>
+          <p class="au">平野 晋吾, <u>五十嵐達也</u>, 山口悠, 里見文歌, 高井翔平, 猪岡弘行</p>
+          <p class="jr">第22回日本神経理学療法学会学術大会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="gait">
+        <p class="yr">2024<b>07</b></p>
+        <div>
+          <p class="ttl">歩行による運動効果について</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">第10回理学療法フェスタin群馬 <span>招待講演, 2024</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular">
+        <p class="yr">2024<b>06</b></p>
+        <div>
+          <p class="ttl">視床出血を呈した一症例に対する前庭リハビリテーションのバランス機能に対する効果</p>
+          <p class="au">平野晋吾, <u>五十嵐達也</u>, 猪岡弘行, <u>林翔太</u>, 加茂智彦</p>
+          <p class="jr">第3回日本前庭理学療法研究会学術集会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular">
+        <p class="yr">2024<b>06</b></p>
+        <div>
+          <p class="ttl">健常高齢者における静的SVVと側方への反応的姿勢制御の関係</p>
+          <p class="au"><u>五十嵐達也</u>, <u>林翔太</u>, 加茂智彦</p>
+          <p class="jr">第3回日本前庭理学療法研究会学術集会 <span>2024</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait prognosis digital">
+        <p class="yr">2024<b>05</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1016/j.gaitpost.2024.04.001" target="_blank" rel="noopener">Accelerometer-based gait characteristics and their discrimination of gait independence in inpatients with subacute stroke.</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Yuta Tani, Ren Takeda, Tomoyuki Asakura</p>
+          <p class="jr">Gait &amp; posture <span>110: 138&ndash;143, 2024</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="vestibular">
+        <p class="yr">2024</p>
+        <div>
+          <p class="ttl">バランス機能低下と浮動性めまいを認めた右視床出血症例に対する前庭リハビリテーションの実践</p>
+          <p class="au">平野 晋吾, 五十嵐 達也, 林 翔太, 猪岡 弘行, 加茂 智彦</p>
+          <p class="jr">神経理学療法学 <span>4(1): 12&ndash;25, 2024</span></p>
+          <p class="chips"><span class="chip">Vestibular</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="vestibular gait">
+        <p class="yr">2024</p>
+        <div>
+          <p class="ttl">亜急性期右小脳・脳幹梗塞後に前庭機能低下を呈した症例に対するGaze stabilization exercisesを用いた歩行速度とバランス機能の効果：BABシングルケースデザイン</p>
+          <p class="au">西須 一紗, 五十嵐 達也</p>
+          <p class="jr">理学療法群馬 <span>35: 56&ndash;62, 2024</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke gait">
+        <p class="yr">2024</p>
+        <div>
+          <p class="ttl">Gaze-stabilization exercises により静的立位・歩行の姿勢制御に即時的改善を認めた橋梗塞後に歩行中の lateropulsion を呈した症例</p>
+          <p class="au">五十嵐 達也、伊藤 祐輝、林 翔太</p>
+          <p class="jr">総合理学療法学 <span>4: 89&ndash;94, 2024</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="">
+        <p class="yr">2024<b>01</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1080/09638288.2022.2162610" target="_blank" rel="noopener">Rasch analysis of the Short Physical Performance Battery in older inpatients with heart failure.</a></p>
+          <p class="au">Kazuhiro Miyata, <u>Tatsuya Igarashi</u>, Shuntaro Tamura, Takamitsu Iizuka, Tomohiro Otani, Shigeru Usuda</p>
+          <p class="jr">Disability and rehabilitation <span>46(2): 401&ndash;406, 2024</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait digital">
+        <p class="yr">2023<b>11</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1038/s41598-023-46725-5" target="_blank" rel="noopener">Minimal detectable change in inertial measurement unit-based trunk acceleration indices during gait in inpatients with subacute stroke.</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Yuta Tani, Ren Takeda, Tomoyuki Asakura</p>
+          <p class="jr">Scientific reports <span>13(1): 19262, 2023</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke">
+        <p class="yr">2023<b>10</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1080/10749357.2022.2145759" target="_blank" rel="noopener">The minimal clinically important difference of the mini-balance evaluation systems test in patients with early subacute stroke.</a></p>
+          <p class="au">Ren Takeda, Kazuhiro Miyata, <u>Tatsuya Igarashi</u></p>
+          <p class="jr">Topics in stroke rehabilitation <span>30(7): 672&ndash;680, 2023</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="prognosis">
+        <p class="yr">2023<b>03</b></p>
+        <div>
+          <p class="ttl">地域在住の要支援・要介護高齢者における生活空間での移動性の広狭を判別する修正版5回椅子立ち座りテストと片脚立位時間のカットオフ値の検証</p>
+          <p class="au">五十嵐 達也, 塩浦 宏祐, 谷 友太, 小田原 大昂, 井上 和樹, 星野 涼, 松岡 秀典, 三友 恵一</p>
+          <p class="jr">地域理学療法学 <span>2: 52&ndash;58, 2023</span></p>
+          <p class="chips"><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="gait">
+        <p class="yr">2023<b>03</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1080/09638288.2022.2052978" target="_blank" rel="noopener">Minimal clinically important difference of the short physical performance battery and comfortable walking speed in old-old adults with acute cardiovascular disease: a multicenter, prospective, observational study.</a></p>
+          <p class="au">Shuntaro Tamura, Kazuhiro Miyata, <u>Tatsuya Igarashi</u>, Takamitsu Iizuka, Tomohiro Otani, Shigeru Usuda</p>
+          <p class="jr">Disability and rehabilitation <span>45(6): 1079&ndash;1086, 2023</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait prognosis">
+        <p class="yr">2023<b>03</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1589/jpts.35.257" target="_blank" rel="noopener">Predictive discriminative accuracy of walking abilities at discharge for community ambulation levels at 6 months post-discharge among inpatients with subacute stroke.</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Ren Takeda, Yuta Tani, Naoya Takahashi, Takuto Ono, Yoshiki Ishii, <u>Shota Hayashi</u>, Shigeru Usuda</p>
+          <p class="jr">Journal of physical therapy science <span>35(3): 257&ndash;264, 2023</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="gait prognosis">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">亜急性期循環器疾患患者における退院時歩行速度および下肢機能と退院1月後の身体活動量との関連性の検証</p>
+          <p class="au"><u>林翔太</u>, 小野拓斗, 小池智紗, 小川嘉壱, <u>五十嵐達也</u></p>
+          <p class="jr">理学療法群馬 <span>(34): 36&ndash;44, 2023</span></p>
+          <p class="chips"><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait prognosis">
+        <p class="yr">2023<b>01</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1589/jpts.35.40" target="_blank" rel="noopener">Relationship between gait regularity and harmony, and gait speed at discharge in inpatients with subacute stroke.</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Yuta Tani, Ren Takeda, Tomoyuki Asakura</p>
+          <p class="jr">Journal of physical therapy science <span>35(1): 40&ndash;45, 2023</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke digital">
+        <p class="yr">2023<b>01</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1589/jpts.35.82" target="_blank" rel="noopener">Short-term effects of pedaling exercise combined with integrated volitional control electrical stimulation in an older patient hospitalized for subacute stroke: ABA single-case design.</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Yuta Tani, <u>Shota Hayashi</u>, Tomoyuki Asakura</p>
+          <p class="jr">Journal of physical therapy science <span>35(1): 82&ndash;87, 2023</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular stroke gait">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">橋梗塞後に歩行中の lateropulsion を呈した症例に対する gaze-stabilization exercises の単回介入の即時的効果：静的立位・歩行の姿勢制御に着目した効果検証</p>
+          <p class="au"><u>五十嵐達也</u>, 伊藤祐輝</p>
+          <p class="jr">第 2 回日本前庭理学療法研究会学術集会 <span>2023</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular digital">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">健常成人に対する VR ゴーグルを用いた 静的及び動的自覚的視性垂直位の信頼性の検証</p>
+          <p class="au"><u>林翔太</u>, 伊藤祐輝, <u>五十嵐達也</u>, 加茂智彦</p>
+          <p class="jr">第 2 回日本前庭理学療法研究会学術集会 <span>2023</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait digital">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">仮想現実（VR）を用いたリハビリにより、歩行能力の改善を図ったパーキンソン病の１症例</p>
+          <p class="au">柿間洋信, 新井原祐斗, 田中裕章, <u>五十嵐達也</u>, 赤尾法彦</p>
+          <p class="jr">第26回日本臨床脳神経外科学会 <span>2023</span></p>
+          <p class="chips"><span class="chip">Gait</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis digital">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">自施設の急性期脳卒中患者を対象とした転帰先を予測する試み-臨床データベースの活用事例-</p>
+          <p class="au">柿間 洋信, 谷 友太, 伊藤 祐輝, 本間 竹千代, 小野 拓斗, 五十嵐 達也</p>
+          <p class="jr">第30回群馬県理学療法士学会 <span>2023</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="vestibular gait">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">亜急性期右小脳・脳幹梗塞後に前庭機能障害を呈した症例に対するGaze stability exercisesを用いた歩行速度への効果：シングルケースデザインによる検討</p>
+          <p class="au">西須一紗, <u>五十嵐達也</u></p>
+          <p class="jr">第30回群馬県理学療法士学会 <span>2023</span></p>
+          <p class="chips"><span class="chip">Vestibular</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">Gaze stability exercisesを取り入れた複合的なバランス練習により反応的姿勢制御に改善を認めた亜急性期視床出血症例</p>
+          <p class="au">坂上大樹, 西須一紗, <u>五十嵐達也</u></p>
+          <p class="jr">第30回群馬県理学療法士学会 <span>2023</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait digital">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">亜急性期入院脳卒中患者における歩行の円滑性と規則性を評価する体幹加速度指標の最小可検変化量の検証</p>
+          <p class="au"><u>五十嵐達也</u>, 谷友太, 武田廉, 高橋直哉, 周東達彦, 朝倉智之</p>
+          <p class="jr">第42回関東甲信越ブロック理学療法士学会 <span>2023</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">失調性歩行を呈した亜急性期橋梗塞例に対するリズム音刺激を用いた歩行練習の効果：シングルケースデザイン</p>
+          <p class="au">岡村 大地, <u>五十嵐達也</u></p>
+          <p class="jr">第42回関東甲信越ブロック理学療法士学会 <span>2023</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">左室駆出率の異なる心不全患者における快適歩行速度のMinimal Clinically Important Difference</p>
+          <p class="au">田村俊太郎, <u>五十嵐達也</u>, 宮田一弘, 飯塚隆充, 大谷知浩, 臼田滋</p>
+          <p class="jr">日本呼吸・循環器合同理学療法学会学術大会 2023 <span>2023</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis digital">
+        <p class="yr">2023</p>
+        <div>
+          <p class="ttl">亜急性期入院脳卒中患者における歩行時の体幹加速度指標の歩行自立度の判別精度とカットオフ値の検証</p>
+          <p class="au"><u>五十嵐達也</u>, 谷友太, 武田廉, 高橋直哉, 周東達彦, 朝倉智之</p>
+          <p class="jr">第21回日本神経理学療法学会学術大会 <span>2023</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke gait">
+        <p class="yr">2022<b>11</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1177/02692155221108552" target="_blank" rel="noopener">Minimal clinically important difference of the Berg Balance Scale and comfortable walking speed in patients with acute stroke: A multicenter, prospective, longitudinal study.</a></p>
+          <p class="au"><u>Shota Hayashi</u>, Kazuhiro Miyata, Ren Takeda, Takamitsu Iizuka, <u>Tatsuya Igarashi</u>, Shigeru Usuda</p>
+          <p class="jr">Clinical rehabilitation <span>36(11): 1512&ndash;1523, 2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="">
+        <p class="yr">2022<b>11</b></p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.1589/jpts.34.752" target="_blank" rel="noopener">Relationship between the characteristics of lower extremity function and activities of daily living in hospitalized middle-aged and older adults with subacute cardiovascular disease.</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Kazuhiro Miyata, Shuntaro Tamura, Tomohiro Otani, Takamitsu Iizuka, Shigeru Usuda</p>
+          <p class="jr">Journal of physical therapy science <span>34(11): 752&ndash;758, 2022</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="prognosis">
+        <p class="yr">2022<b>10</b></p>
+        <div>
+          <p class="ttl">退院前後の身体活動量のフィードバックと生活指導により円滑な復職に至った冠動脈バイパス術後症例</p>
+          <p class="au">橋本亜佐美, 髙橋直哉, <u>五十嵐達也</u></p>
+          <p class="jr">第29回群馬県理学療法士学会 <span>2022</span></p>
+          <p class="chips"><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2022<b>10</b></p>
+        <div>
+          <p class="ttl">麻痺側股関節周囲筋の筋出力低下に対し、随意運動介助型電気刺激装置 (IVES)を併用し た短期的介入により、歩行能力が向上した亜急性期脳梗塞片麻痺症例</p>
+          <p class="au">坂本寛太, 伊藤祐輝, <u>五十嵐達也</u></p>
+          <p class="jr">第29回群馬県理学療法士学会 <span>2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2022<b>10</b></p>
+        <div>
+          <p class="ttl">多発性脳梗塞により重複障害を呈した患者に対し、早期から段階的難易度調整立位スケールによる立位練習と免荷式歩行器による歩行練習を施行し、基本動作能力が向上した症例</p>
+          <p class="au">小川嘉壱, <u>林翔太</u>, <u>五十嵐達也</u></p>
+          <p class="jr">第29回群馬県理学療法士学会 <span>2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis digital">
+        <p class="yr">2022<b>10</b></p>
+        <div>
+          <p class="ttl">亜急性期脳卒中片麻痺者の体幹加速度由来歩容指標の歩行自立度との関連</p>
+          <p class="au">谷友太, <u>五十嵐達也</u>, 荻野沙月, 武田廉, 朝倉智之, 臼田滋</p>
+          <p class="jr">第29回群馬県理学療法士学会 <span>2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span><span class="chip">Digital</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2022<b>10</b></p>
+        <div>
+          <p class="ttl">従来の方法と新たな方法での Minimal clinically important difference（MCID）の検討-亜急性期脳卒中患者の 6 分間歩行距離での検証</p>
+          <p class="au"><u>林翔太</u>, 武田廉, 宮田一弘, 飯塚隆充, <u>五十嵐達也</u>, 臼田滋</p>
+          <p class="jr">第29回群馬県理学療法士学会 <span>2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2022<b>10</b></p>
+        <div>
+          <p class="ttl">急性期脳卒中患者における Fugl-Meyer Assessment 下肢運動項目の予測的妥当性の検証</p>
+          <p class="au">武田廉, <u>五十嵐達也</u>, 臼田滋</p>
+          <p class="jr">第29回群馬県理学療法士学会 <span>2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2022<b>10</b></p>
+        <div>
+          <p class="ttl">亜急性期入院軽症脳卒中患者の退院時の6分間歩行距離による退院6ヶ月後の地域での歩行能力の予測判別の検証</p>
+          <p class="au"><u>五十嵐達也</u>, 武田廉, 谷友太, 高橋直哉, 小野拓斗, 石井良樹, <u>林翔太</u>, 臼田滋</p>
+          <p class="jr">第20回日本神経理学療法学会学術大会 <span>2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke">
+        <p class="yr">2022<b>08</b></p>
+        <div>
+          <p class="ttl">右被殻出血にてsubjective postural verticalの偏倚を呈した患者に対して、視覚フィードバックを併用した理学療法によりバランス能力の改善が認められた症例</p>
+          <p class="au">福原 豪輝, 武田 廉, 五十嵐 達也</p>
+          <p class="jr">理学療法群馬 <span>(33): 82&ndash;86, 2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait">
+        <p class="yr">2022<b>05</b></p>
+        <div>
+          <p class="ttl">亜急性期心疾患患者における6分間歩行距離の臨床的に意義のある最小変化量の検討</p>
+          <p class="au">飯塚 隆充, 田村 俊太郎, 五十嵐 達也, 宮田 一弘, 大谷 知浩, 臼田 滋</p>
+          <p class="jr">The Japanese Journal of Rehabilitation Medicine <span>2022</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke">
+        <p class="yr">2022<b>02</b></p>
+        <div>
+          <p class="ttl">亜急性期脳卒中患者における大腿部骨格筋の筋厚、筋輝度と関連要因の検討</p>
+          <p class="au">五十嵐 達也, 松岡 秀典, 星野 涼, 臼田 滋</p>
+          <p class="jr">理学療法科学 <span>37(1): 39&ndash;44, 2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke">
+        <p class="yr">2022</p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.11336/jjcrs.13.56" target="_blank" rel="noopener">Relationship between daily rehabilitation time and functional gain in inpatient rehabilitation medicine of hospitalized older adults with subacute stroke.</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, <u>Shota Hayashi</u>, Kaichi Ogawa, Shinya Matsui, Terutaka Nishimatsu</p>
+          <p class="jr">Japanese journal of comprehensive rehabilitation science <span>13: 56&ndash;63, 2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="orig" data-areas="stroke">
+        <p class="yr">2022</p>
+        <div>
+          <p class="ttl"><a href="https://doi.org/10.3233/NRE-210295" target="_blank" rel="noopener">Relationship of the brief-balance evaluation systems test with physical functioning and activities of daily living: A cross-sectional study among hospitalized acute stroke patients.</a></p>
+          <p class="au"><u>Tatsuya Igarashi</u>, Ren Takeda, <u>Shota Hayashi</u></p>
+          <p class="jr">NeuroRehabilitation <span>50(4): 417&ndash;423, 2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2022</p>
+        <div>
+          <p class="ttl">急性期の高齢脳卒中患者におけるリハビリテーション医療の介入時間と機能的利得の関連性</p>
+          <p class="au"><u>五十嵐達也</u>, <u>林翔太</u>, 小川嘉壱, 関根英哉</p>
+          <p class="jr">Japanese Journal of Rehabilitation Medicine <span>2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2022</p>
+        <div>
+          <p class="ttl">視覚的キューを用いた環境設定と動作練習により転倒頻度が減少した視覚障害を伴う超高齢生活期脳卒中症例</p>
+          <p class="au">谷友太, <u>五十嵐達也</u>, 井上和樹</p>
+          <p class="jr">日本理学療法士協会関東甲信越ブロック理学療法士学会(Web) <span>2022</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2022</p>
+        <div>
+          <p class="ttl">独居環境の心不全患者に対しヨーロッパ心不全セルフケア評価尺度を基に生活指導を行い行動変容に至った症例</p>
+          <p class="au">周東達彦, 谷友太, <u>五十嵐達也</u></p>
+          <p class="jr">日本理学療法士協会関東甲信越ブロック理学療法士学会(Web) <span>2022</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait prognosis">
+        <p class="yr">2022</p>
+        <div>
+          <p class="ttl">亜急性期循環器疾患患者における退院時歩行速度および下肢機能と退院1ヶ月後の身体活動量との関連性の検証</p>
+          <p class="au">小野拓斗, 小池智沙, <u>林翔太</u>, 小川嘉壱, <u>五十嵐達也</u></p>
+          <p class="jr">日本理学療法士協会関東甲信越ブロック理学療法士学会(Web) <span>2022</span></p>
+          <p class="chips"><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke gait">
+        <p class="yr">2021<b>12</b></p>
+        <div>
+          <p class="ttl">脳卒中患者におけるBrief-Balance Evaluation Systems Test(BESTest)を構成するセクションと歩行速度との関連性</p>
+          <p class="au">五十嵐 達也, 武田 廉, 林 翔太</p>
+          <p class="jr">理学療法科学 <span>36(6): 777&ndash;781, 2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait prognosis">
+        <p class="yr">2021<b>12</b></p>
+        <div>
+          <p class="ttl">循環器疾患者を対象とした下肢機能の包括評価であるShort Physical Performance Batteryの尺度特性と歩行能力の判別精度の検証</p>
+          <p class="au">五十嵐 達也, 平澤 直己, 高根 和希, 林 翔太, 宮田 一弘</p>
+          <p class="jr">理学療法学 <span>2021</span></p>
+          <p class="chips"><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="">
+        <p class="yr">2021<b>08</b></p>
+        <div>
+          <p class="ttl">中山間地域における訪問リハビリテーション利用者の生活空間に関連する要因の検討 生活空間が主観的幸福感や介護負担度に影響を及ぼすか?</p>
+          <p class="au">林 翔太, 高橋 奈々, 五十嵐 達也, 小林 夏希, 柿間 洋信, 宮田 一弘</p>
+          <p class="jr">理学療法群馬 <span>(32): 8&ndash;15, 2021</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke">
+        <p class="yr">2021<b>08</b></p>
+        <div>
+          <p class="ttl">Rasch分析を用いた急性期脳卒中患者におけるFunctional Assessment for Control of Trunk(FACT)の構造的妥当性の検討</p>
+          <p class="au">菅 博貴, 宮田 一弘, 柿間 洋信, 林 翔太, 五十嵐 達也</p>
+          <p class="jr">理学療法科学 <span>36(4): 561&ndash;565, 2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="case" data-areas="stroke gait">
+        <p class="yr">2021<b>08</b></p>
+        <div>
+          <p class="ttl">下肢痙縮に対しボツリヌス療法と機能的電気刺激装置を併用した理学療法介入により歩行持久性に改善を認めた慢性期脳卒中患者の一症例</p>
+          <p class="au">五十嵐 達也, 林 翔太</p>
+          <p class="jr">理学療法科学 <span>36(4): 647&ndash;652, 2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke">
+        <p class="yr">2021<b>04</b></p>
+        <div>
+          <p class="ttl">急性期入院脳卒中者における超音波診断装置を用いた下肢筋厚、筋輝度測定の信頼性と最小可検変化量の検証</p>
+          <p class="au">五十嵐 達也, 松岡 秀典, 星野 涼, 西松 輝高, 臼田 滋</p>
+          <p class="jr">理学療法科学 <span>36(2): 239&ndash;246, 2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2021<b>03</b></p>
+        <div>
+          <p class="ttl">測定条件の違いが下腿三頭筋の筋厚値に与える影響 健常者・脳卒中患者に対する検討</p>
+          <p class="au">五十嵐 達也, 松岡 秀典, 星野 涼, 臼田 滋</p>
+          <p class="jr">理学療法学 <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">急性期入院患者におけるADL能力の改善指標であるFIM effectivenessの関連性の検証</p>
+          <p class="au">五十嵐 達也</p>
+          <p class="jr">全日本病院協会雑誌 <span>32(1), 2021</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">亜急性期脳卒中患者における6-Minute Walk Testの臨床上意味のある最小重要差（MCID）の検討</p>
+          <p class="au"><u>林翔太</u>, 武田廉, <u>五十嵐達也</u>, 飯塚隆充, 宮田一弘, 臼田滋</p>
+          <p class="jr">第28回群馬県理学療法士学会 <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">軽症脳梗塞患者に対し再発予防を目的とした介入を中心に行った結果、退院後の行動変容へと繋がった症例</p>
+          <p class="au">小林和貴, <u>五十嵐達也</u>, <u>林翔太</u></p>
+          <p class="jr">第28回群馬県理学療法士学会 <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">急性期脳卒中患者におけるMini-Balance Evaluation Systems Testの臨床的意義のある最小変化量の検討</p>
+          <p class="au">武田廉, <u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">Rasch分析を用いた亜急性期脳卒中患者におけるFunctional Assessment for Control of Trunkの構造的妥当性の検討</p>
+          <p class="au">菅博貴, 柿間洋信, <u>林翔太</u>, <u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">亜急性期脳卒中患者における歩行速度,BBS,6分間歩行試験の最小可検変化量(MDC)の検討</p>
+          <p class="au"><u>林翔太</u>, <u>五十嵐達也</u>, <u>五十嵐達也</u>, 武田廉, 飯塚隆充, 宮田一弘, 臼田滋</p>
+          <p class="jr">Japanese Journal of Rehabilitation Medicine <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">異なる下肢機能を有する入院循環器疾患者の歩行速度と歩行持久性の比較検証</p>
+          <p class="au"><u>五十嵐達也</u>, <u>五十嵐達也</u>, 田村俊太郎, 田村俊太郎, 飯塚隆充, 大谷知浩, 宮田一弘, 臼田滋</p>
+          <p class="jr">Japanese Journal of Rehabilitation Medicine <span>2021</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">心疾患患者におけるShort Physical Performance Batteryおよび歩行速度の臨床的に意義のある最小変化量の検討</p>
+          <p class="au">田村俊太郎, 田村俊太郎, <u>五十嵐達也</u>, <u>五十嵐達也</u>, 飯塚隆充, 大谷知浩, 宮田一弘, 臼田滋</p>
+          <p class="jr">Japanese Journal of Rehabilitation Medicine <span>2021</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">訪問リハビリテーションにより自己効力感の向上と生活空間の拡大を認めた脳卒中症例の長期経過</p>
+          <p class="au">高橋奈々, <u>五十嵐達也</u></p>
+          <p class="jr">日本理学療法士協会関東甲信越ブロック理学療法士学会(Web) <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">脳卒中者におけるHONDA歩行アシストによる歩行練習が転倒恐怖感,歩行自己効力感に与える影響の検討</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">Brief-BESTestを構成するバランス制御システムと脳卒中者における歩行能力との関連性および判別精度の検証</p>
+          <p class="au"><u>五十嵐達也</u>, 武田廉</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait prognosis">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">急性期脳卒中者におけるModified Dynamic Gait Indexと日常生活自立度及びバランス能力との関連性</p>
+          <p class="au">柿間洋信, 柿間洋信, 荻野沙月, 武田廉, <u>五十嵐達也</u>, 篠原智行, 竹内伸行</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2021</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">リハビリテーション職における腰痛発生状況と腰痛有訴者の業務特性の検討</p>
+          <p class="au">高橋直哉, 高橋直哉, 松岡秀典, 松岡秀典, 松岡秀典, 石井良樹, 石井良樹, 谷友太, 谷友太, 金子知恵, 福永千紗, 福永千紗, 三友恵一, 三友恵一, 新木巧, 新木巧, <u>五十嵐達也</u>, 柿間洋信</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2021</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait">
+        <p class="yr">2021</p>
+        <div>
+          <p class="ttl">Modified Dynamic Gait Indexの信頼性の検討</p>
+          <p class="au">柿間洋信, 柿間洋信, 荻野沙月, <u>五十嵐達也</u>, 篠原智行, 竹内伸行</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2021</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke gait">
+        <p class="yr">2020<b>12</b></p>
+        <div>
+          <p class="ttl">随意運動介助型電気刺激を用いた筋力トレーニングと歩行練習が軽症急性期脳卒中患者の運動麻痺や歩行機能に及ぼす影響 準ランダム化比較試験での検討</p>
+          <p class="au">林 翔太, 五十嵐 達也, 井上 和樹, 大熊 彩, 川口 亮太, 高橋 直哉, 臼田 滋</p>
+          <p class="jr">理学療法科学 <span>35(6): 885&ndash;891, 2020</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="case" data-areas="">
+        <p class="yr">2020<b>12</b></p>
+        <div>
+          <p class="ttl">臨床意思決定にBalance Evaluation Systems Testを用いることでバランス能力の改善が認められた進行性核上性麻痺の一症例</p>
+          <p class="au">五十嵐 達也, 宮田 一弘</p>
+          <p class="jr">理学療法科学 <span>35(6): 923&ndash;930, 2020</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke">
+        <p class="yr">2020<b>12</b></p>
+        <div>
+          <p class="ttl">急性期脳卒中患者におけるMini-Balance Evaluation Systems Testの尺度特性の検討</p>
+          <p class="au">武田 廉, 五十嵐 達也, 大熊 彩, 小山 智寛, 星野 雄哉, 宮田 一弘</p>
+          <p class="jr">理学療法学 <span>47(6): 507&ndash;514, 2020</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke">
+        <p class="yr">2020<b>02</b></p>
+        <div>
+          <p class="ttl">急性期脳卒中患者におけるFunctional Assessment for Control of Trunk(FACT)の反応性および臨床的に意義のある最小変化量の検討</p>
+          <p class="au">菅 博貴, 島 千秋, 柿間 洋信, 林 翔太, 五十嵐 達也, 宮田 一弘</p>
+          <p class="jr">理学療法学 <span>47(1): 35&ndash;41, 2020</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">リハビリテーション職種に生じる腰痛と業務内容の関連性および職種別の業務内容の比較</p>
+          <p class="au">髙橋直哉, 松岡秀典, 谷友太, 石井良樹, 柿間洋信, <u>五十嵐達也</u></p>
+          <p class="jr">第27回群馬県理学療法士学会 <span>2020</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">重度の運動失調を呈した小脳梗塞例に対し, 免荷式歩行器を用いた介入により, 基本動作能力が向上した症例</p>
+          <p class="au">荻野沙月, <u>五十嵐達也</u>, 柿間洋信</p>
+          <p class="jr">第27回群馬県理学療法士学会 <span>2020</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">脳幹梗塞により生じた複視に対する課題指向的介入の治療経過</p>
+          <p class="au">柿間洋信, <u>五十嵐達也</u></p>
+          <p class="jr">第27回群馬県理学療法士学会 <span>2020</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">急性期脳卒中患者におけるBerg Balance Scaleの臨床的意義のある最小変化量の検討</p>
+          <p class="au">武田廉, <u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">第27回群馬県理学療法士学会 <span>2020</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">急性期脳卒中患者に対する超音波診断装置を用いた下肢筋厚測定の信頼性の検討</p>
+          <p class="au"><u>五十嵐達也</u>, 松岡秀典, 星野涼, 新井健太, 臼田滋</p>
+          <p class="jr">日本理学療法士協会関東甲信越ブロック理学療法士学会(Web) <span>2020</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">急性期脳卒中患者におけるMini-Balance Evaluation Systems Testの妥当性の検討</p>
+          <p class="au">小山智寛, 武田廉, 大熊彩, 星野雄哉, 菅博貴, 高橋直哉, <u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2020</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="prognosis">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">動作能力と家族介護力から予後予測を行い自宅退院が困難と考えられた症例</p>
+          <p class="au">荻野沙月, <u>五十嵐達也</u>, 田中真稔, 宮田一弘</p>
+          <p class="jr">日本理学療法士協会関東甲信越ブロック理学療法士学会(Web) <span>2020</span></p>
+          <p class="chips"><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">当院のリハ専門職を対象とした人生の最終段階における医療に関する意識調査について</p>
+          <p class="au">荒木綾平, <u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">日本理学療法士協会関東甲信越ブロック理学療法士学会(Web) <span>2020</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="prognosis">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">転倒歴のある超高齢患者に動作練習を中心に介入したことで転倒恐怖感が改善した症例</p>
+          <p class="au">谷友太, 平澤直己, <u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">日本理学療法士協会関東甲信越ブロック理学療法士学会(Web) <span>2020</span></p>
+          <p class="chips"><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">左視床梗塞によりAtaxic Hemiparesisを呈した一症例のバランス能力の長期経過</p>
+          <p class="au">阿久澤知恵, <u>五十嵐達也</u>, 高根和希, 宮田一弘</p>
+          <p class="jr">日本理学療法士協会関東甲信越ブロック理学療法士学会(Web) <span>2020</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">山間部地域における訪問リハビリテーション利用者の生活空間,幸福感,家族の介護負担度の関連性</p>
+          <p class="au">高橋奈々, 高橋奈々, 小林夏希, 小林夏希, <u>林翔太</u>, 柿間洋信, <u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2020</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2020</p>
+        <div>
+          <p class="ttl">進行性核上性麻痺症例に対するBalance Evaluation Systems testを用いた介入の有用性</p>
+          <p class="au"><u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2020</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke prognosis">
+        <p class="yr">2019<b>10</b></p>
+        <div>
+          <p class="ttl">自宅退院した急性期脳卒中患者の健康関連QOLと身体機能およびADLに関する検討</p>
+          <p class="au">高根 和希, 平澤 直己, 林 翔太, 五十嵐 達也, 宮田 一弘</p>
+          <p class="jr">理学療法科学 <span>34(5): 661&ndash;665, 2019</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke gait">
+        <p class="yr">2019<b>08</b></p>
+        <div>
+          <p class="ttl">超高齢片麻痺患者に対し、体重免荷式歩行器(POPO)を用いた急性期理学療法介入の一考察</p>
+          <p class="au">菅 博貴, 五十嵐 達也</p>
+          <p class="jr">理学療法群馬 <span>(30): 48&ndash;52, 2019</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2019<b>08</b></p>
+        <div>
+          <p class="ttl">急性期脳卒中患者におけるFunctional Assessment for Control of Trunkの反応性の検討</p>
+          <p class="au">菅 博貴, 島 千秋, 柿間 洋信, 林 翔太, 宮田 一弘, 五十嵐 達也</p>
+          <p class="jr">理学療法学 <span>2019</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2019<b>08</b></p>
+        <div>
+          <p class="ttl">機能的電気刺激療法が急性期脳卒中患者に及ぼす治療効果の検討</p>
+          <p class="au">林 翔太, 五十嵐 達也, 井上 和樹, 高根 和希, 高橋 奈々, 高田 直哉, 武田 廉, 小林 夏希, 平澤 直己, 臼田 滋</p>
+          <p class="jr">理学療法学 <span>2019</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2019</p>
+        <div>
+          <p class="ttl">理学療法実施中の急性期脳卒中患者における下肢筋の筋厚と筋輝度の継時的変化</p>
+          <p class="au"><u>五十嵐達也</u>, <u>五十嵐達也</u>, 柿間洋信, 岡林亮, 星野雄哉, 松岡秀典, <u>林翔太</u>, 臼田滋</p>
+          <p class="jr">日本サルコペニア・フレイル学会誌 <span>2019</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2019</p>
+        <div>
+          <p class="ttl">急性期病院から自宅退院した脳卒中患者の健康関連QOLとSPPB,FIMの下位項目の関連</p>
+          <p class="au">高根和希, 平澤直己, 武田廉, 井上和樹, 星野雄哉, <u>林翔太</u>, <u>五十嵐達也</u>, 宮田一弘, 宮田一弘</p>
+          <p class="jr">日本理学療法学術大会(Web) <span>2019</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="">
+        <p class="yr">2018<b>11</b></p>
+        <div>
+          <p class="ttl">脳画像の基礎知識</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">一般社団法人群馬県理学療法士協会主催 北毛ブロック連絡会 <span>招待講演, 2018</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="">
+        <p class="yr">2018<b>10</b></p>
+        <div>
+          <p class="ttl">急性期の症例を対象としたウォークエイドの使用経験とその応用</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">帝人ファーマ株式会社 第3回ウォークエイドUser&#x27;s meeting <span>招待講演, 2018</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="stroke">
+        <p class="yr">2018<b>08</b></p>
+        <div>
+          <p class="ttl">急性期脳卒中患者における経口摂取開始日と転帰の関連性</p>
+          <p class="au">岡林 亮, 光 大輔, 星野 真歩, 星野 雄哉, 荒木 綾平, 五十嵐 達也</p>
+          <p class="jr">理学療法群馬 <span>(29): 1&ndash;4, 2018</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="jp" data-areas="">
+        <p class="yr">2018<b>08</b></p>
+        <div>
+          <p class="ttl">急性期病院の理学療法士により生じたアクシデントの事例分析 経験年数、内容、影響度に着目した分析</p>
+          <p class="au">五十嵐 達也, 内山 信久, 星野 雄哉, 林 翔太, 宮田 一弘</p>
+          <p class="jr">理学療法群馬 <span>(29): 26&ndash;33, 2018</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2018</p>
+        <div>
+          <p class="ttl">医療施設における卒後教育の現状と課題-単一施設における質問紙調査の結果から-</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">第37回関東甲信越ブロック理学療法士学会 <span>2018</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2018</p>
+        <div>
+          <p class="ttl">被殻出血症例に対する急性期理学療法の一考察-内側運動制御系と先行随伴性姿勢調節に着目した介入-</p>
+          <p class="au">武田 廉, 五十嵐 達也</p>
+          <p class="jr">第 26 回群馬県理学療法士学会 <span>2018</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2018</p>
+        <div>
+          <p class="ttl">当院の介護予防事業での理学療法士の関わり—群馬県沼田市での取り組み</p>
+          <p class="au">高根和希, <u>五十嵐達也</u></p>
+          <p class="jr">第53回日本理学療法士学術研修大会 <span>2018</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2018</p>
+        <div>
+          <p class="ttl">亜急性期脳卒中患者における FACT の妥当性の検討</p>
+          <p class="au">島千秋, 菅博貴, 柿間洋信, <u>林翔太</u>, <u>五十嵐達也</u>, 宮田一弘</p>
+          <p class="jr">第 26 回群馬県理学療法士学会 <span>2018</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2018</p>
+        <div>
+          <p class="ttl">自宅退院した脳卒中患者の健康関連QOLと身体機能,ADLの関連性</p>
+          <p class="au">平澤 直己, 高根 和希, 五十嵐 達也, 星野 雄哉, 井上 和樹, 武田 廉, 林 翔太, 宮田 一弘</p>
+          <p class="jr">第37回関東甲信越ブロック理学療法士学会 <span>2018</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait">
+        <p class="yr">2017</p>
+        <div>
+          <p class="ttl">協調性運動障害の症例に対し、免荷式補装具とHONDA歩行アシストを併用した症例-ABAB designによる検証-</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">歩行リハビリテーション研究会 <span>2017</span></p>
+          <p class="chips"><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="">
+        <p class="yr">2017</p>
+        <div>
+          <p class="ttl">排尿ケアチーム介入がADLに与える影響－後方視的調査による今後の課題検討－</p>
+          <p class="au">高根 和希, <u>五十嵐達也</u></p>
+          <p class="jr">第25回群馬県理学療法士学会 <span>2017</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke prognosis">
+        <p class="yr">2017</p>
+        <div>
+          <p class="ttl">急性期脳卒中患者における早期予後予測~NIHSS と FIM の各下位項目に 着目した関連因子の抽出~</p>
+          <p class="au">井上 和樹, 滝澤 峻登, 深代 知花, 五十嵐 達也, 荒木 綾平, 星野 雄哉</p>
+          <p class="jr">第25回群馬県理学療法士学会 <span>2017</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke gait">
+        <p class="yr">2017</p>
+        <div>
+          <p class="ttl">急性期脳卒中患者における運動失調の経時的変化と歩行能力の関連性について</p>
+          <p class="au">中村杏奈, 玉木若菜, 荒木綾平, 柿間洋信, <u>五十嵐達也</u></p>
+          <p class="jr">第25回群馬県理学療法士学会 <span>2017</span></p>
+          <p class="chips"><span class="chip">Stroke</span><span class="chip">Gait</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="">
+        <p class="yr">2016<b>10</b></p>
+        <div>
+          <p class="ttl">臨床実習教育における実習システムの紹介および具体的な指導方法</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">一般社団法人群馬県理学療法士協会主催 第12回臨床実習教育講習会 <span>招待講演, 2016</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="stroke">
+        <p class="yr">2016<b>10</b></p>
+        <div>
+          <p class="ttl">急性期脳卒中患者を対象としたウォークエイドの使用経験</p>
+          <p class="au"><u>五十嵐達也</u></p>
+          <p class="jr">帝人ファーマ株式会社 第2回ウォークエイドUser&#x27;s meeting <span>招待講演, 2016</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="">
+        <p class="yr">2016<b>10</b></p>
+        <div>
+          <p class="ttl">クリニカルクラークシップによる実習の展開</p>
+          <p class="jr">新潟医療福祉大学 臨床実習指導者講習会 <span>招待講演, 2016</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="">
+        <p class="yr">2016<b>07</b></p>
+        <div>
+          <p class="ttl">運動器の機能向上プログラム</p>
+          <p class="jr">一般社団法人群馬県理学療法士協会主催 介護予防運動器機能向上研修会 <span>招待講演, 2016</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="invited" data-areas="">
+        <p class="yr">2016<b>06</b></p>
+        <div>
+          <p class="ttl">群馬県POS連絡協議会 介護予防事業ふれあい・いきいきサロン 講師</p>
+          <p class="jr"><span>招待講演, 2016</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2016</p>
+        <div>
+          <p class="ttl">急性期脳卒中患者における経口摂取開始日と転帰の関連性</p>
+          <p class="au">岡林 亮, 光 大輔, 星野 真歩, 星野 雄哉, 荒木 綾平, 五十嵐 達也</p>
+          <p class="jr">第24回群馬県理学療法士学会 <span>2016</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="gait prognosis">
+        <p class="yr">2013<b>09</b></p>
+        <div>
+          <p class="ttl">当院における心臓弁置換術後患者に対し、病棟内歩行自立を遅延させた術前・術中因子の検討</p>
+          <p class="au">田中 真稔, 五十嵐 達也, 青木 直幸, 志摩 耕平, 松井 信也, 森下 篤, 西松 輝高</p>
+          <p class="jr">群馬県救急医療懇談会誌 <span>2013</span></p>
+          <p class="chips"><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+        </div>
+      </article>
+
+      <article class="pub" data-type="conf" data-areas="stroke">
+        <p class="yr">2011</p>
+        <div>
+          <p class="ttl">くも膜下出血後の脳血管攣縮期における理学療法の有用性に対する検討</p>
+          <p class="au"><u>五十嵐達也</u>, 関根龍, <u>林翔太</u>, 町田光, 青木直幸, 田中真稔, 志摩耕平, 松井信也, 石川俊郎</p>
+          <p class="jr">第19回群馬県理学療法士学会 <span>2011</span></p>
+          <p class="chips"><span class="chip">Stroke</span></p>
+        </div>
+      </article>
+    </div>
+    <p class="emptynote" id="pubempty" hidden data-en="No publications match this combination of filters.">この条件に一致する業績はありません。</p>
+    <div class="pubfoot">
+      <span id="pubcount" class="mono"></span>
+      <button type="button" id="pubmore"></button>
+    </div>
+    <a class="morelink" href="https://researchmap.jp/igrstty" target="_blank" rel="noopener" data-en="Source record on researchmap ↗">出典：researchmap ↗</a>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">Projects</p>
+      <h2 data-en="Funded projects <span>11 grants, 2023&ndash;2029</span>">研究課題・競争的資金 <span>11 件（2023&ndash;2029）</span></h2>
+      <p data-en="Ongoing work is marked ACTIVE. PI marks projects led as principal investigator.">進行中の課題には ACTIVE、研究代表者として実施する課題には PI を表示しています。</p>
+    </div>
+    <div class="projgrid" id="projgrid">
+
+      <article class="proj" data-areas="stroke gait digital prognosis">
+        <div class="top"><span class="badge live">Active</span><span class="badge pi">PI</span><span class="per">2026&ndash;2029</span></div>
+        <h4 data-en="Development of a fall prediction model for people living with stroke">脳卒中者を対象とした転倒予測モデルの開発</h4>
+        <p class="fund" data-en="JSPS KAKENHI, Grant-in-Aid for Early-Career Scientists">日本学術振興会 科学研究費助成事業　若手研究</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Digital</span><span class="chip">Prognosis</span></p>
+      </article>
+
+      <article class="proj" data-areas="vestibular stroke">
+        <div class="top"><span class="badge live">Active</span><span class="per">2025&ndash;2027</span></div>
+        <h4 data-en="Vestibular function assessment supporting community reintegration after stroke">脳卒中後の社会復帰を支える前庭機能評価</h4>
+        <p class="fund" data-en="Yumemi Foundation for Housing &amp; Medical Care, Research Grant">公益財団法人 ユニベール／在宅医療研究助成</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+      </article>
+
+      <article class="proj" data-areas="vestibular">
+        <div class="top"><span class="badge live">Active</span><span class="per">2026</span></div>
+        <h4 data-en="Chronic dizziness and the effect of vestibular rehabilitation">慢性めまいに対する前庭リハビリテーションの効果検証</h4>
+        <p class="fund" data-en="Japanese Physical Therapy Association, Diagnostic-fee research grant">日本理学療法士協会 診療報酬関連研究助成</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Vestibular</span></p>
+      </article>
+
+      <article class="proj" data-areas="digital gait">
+        <div class="top"><span class="badge live">Active</span><span class="per">2025.04&ndash;2026.03</span></div>
+        <h4 data-en="Reliability of markerless motion analysis using OpenCap">OpenCap を用いたマーカーレス動作解析の信頼性検証</h4>
+        <p class="fund" data-en="Bunkyo Gakuin University, Joint Research Grant">文京学院大学 共同研究費</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Digital</span><span class="chip">Gait</span></p>
+      </article>
+
+      <article class="proj" data-areas="digital gait vestibular prognosis">
+        <div class="top"><span class="badge live">Active</span><span class="per">2025&ndash;2026.03</span></div>
+        <h4 data-en="Markerless motion analysis for vestibular deficit and fall-risk prediction">マーカーレス動作解析による前庭機能低下と転倒リスクの予測</h4>
+        <p class="fund" data-en="France Bed Medical Home Care Research Subsidy Foundation">公益財団法人 フランスベッド・ホームケア財団</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Digital</span><span class="chip">Gait</span><span class="chip">Vestibular</span><span class="chip">Prognosis</span></p>
+      </article>
+
+      <article class="proj" data-areas="vestibular stroke">
+        <div class="top"><span class="badge live">Active</span><span class="per">2025&ndash;2026</span></div>
+        <h4 data-en="Infratentorial stroke and body lateropulsion">テント下脳卒中と body lateropulsion</h4>
+        <p class="fund" data-en="Japan Vestibular Physical Therapy Association, equipment-loan research grant">日本前庭理学療法学会 機器貸与型研究助成</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
+      </article>
+
+      <article class="proj" data-areas="">
+        <div class="top"><span class="badge live">Active</span><span class="per">2025.04&ndash;2026.03</span></div>
+        <h4 data-en="Intervention strategies in acute heart failure">急性期心不全に対する介入戦略の検討</h4>
+        <p class="fund" data-en="Gunma Health Promotion Foundation, Research Grant">公益財団法人 群馬県健康づくり財団 研究助成</p>
+      </article>
+
+      <article class="proj past" data-areas="stroke digital">
+        <div class="top"><span class="badge">Completed</span><span class="per">2024&ndash;2025</span></div>
+        <h4 data-en="Assessment of the spatial attention network (co-investigator)">空間性注意ネットワークの評価（研究分担）</h4>
+        <p class="fund" data-en="Saitama Physical Therapy Association, Research Grant">埼玉県理学療法士会 研究助成</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Stroke</span><span class="chip">Digital</span></p>
+      </article>
+
+      <article class="proj past" data-areas="stroke gait digital prognosis">
+        <div class="top"><span class="badge">Completed</span><span class="badge pi">PI</span><span class="per">2024&ndash;2025</span></div>
+        <h4 data-en="Prognostic prediction model for walking ability">歩行能力の予後予測モデルの構築</h4>
+        <p class="fund" data-en="JSPS KAKENHI, Grant-in-Aid for Encouragement of Scientists">日本学術振興会 科学研究費助成事業　奨励研究</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Digital</span><span class="chip">Prognosis</span></p>
+      </article>
+
+      <article class="proj past" data-areas="stroke gait prognosis">
+        <div class="top"><span class="badge">Completed</span><span class="badge pi">PI</span><span class="per">2023&ndash;2024</span></div>
+        <h4 data-en="Gait analysis and fall prediction in acute stroke">急性期脳卒中における歩行分析と転倒予測</h4>
+        <p class="fund" data-en="Gunma Health Promotion Foundation, Research Grant">公益財団法人 群馬県健康づくり財団 研究助成</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Stroke</span><span class="chip">Gait</span><span class="chip">Prognosis</span></p>
+      </article>
+
+      <article class="proj past" data-areas="gait digital">
+        <div class="top"><span class="badge">Completed</span><span class="badge pi">PI</span><span class="per">2023&ndash;2024</span></div>
+        <h4 data-en="Measurement properties of trunk acceleration gait indices">体幹加速度による歩行指標の測定特性</h4>
+        <p class="fund" data-en="Rehabilitation Medicine Research Foundation, Research Grant">公益財団法人 リハビリテーション医学研究財団 研究助成</p>
+        <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Gait</span><span class="chip">Digital</span></p>
+      </article>
+
+    </div>
+    <p class="emptynote" id="projempty" hidden data-en="No projects match this filter.">この条件に一致する研究課題はありません。</p>
+  </div>
+</section>
+
+<section id="news">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">News</p>
+      <h2 data-en="Recent activity">ニュース</h2>
+      <p data-en="Selected highlights since April 2024: main international-journal papers, invited lectures, awards, grants and appointments. The full record is on researchmap.">2024年4月以降の主な国際誌掲載・招待講演・受賞・研究費採択・就任です。全業績は researchmap をご参照ください。</p>
+    </div>
+    <div class="tabs" id="newstabs" role="tablist" style="margin-bottom:26px">
+      <button type="button" role="tab" data-kind="all" aria-selected="true" data-en="All">すべて</button>
+      <button type="button" role="tab" data-kind="paper" aria-selected="false" data-en="Papers">論文掲載</button>
+      <button type="button" role="tab" data-kind="talk" aria-selected="false" data-en="Talks">講演・発表</button>
+      <button type="button" role="tab" data-kind="other" aria-selected="false" data-en="Awards &amp; appointments">受賞・就任</button>
+    </div>
+    <div class="news">
+      <div class="newsitem up" data-kind="talk"><p class="d">2026.10</p><div><span class="k">Upcoming</span><p class="t" data-en="Upcoming invited lecture “中枢前庭障害への挑戦 脳卒中診療に活かす前庭リハビリテーション” at 令和８年度東京都地域リハビリテーション支援事業 シリーズ企画 前庭リハビリテーションを知ろう.">令和８年度東京都地域リハビリテーション支援事業 シリーズ企画 前庭リハビリテーションを知ろうにて『中枢前庭障害への挑戦 脳卒中診療に活かす前庭リハビリテーション』の講演を行います。</p></div></div>
+      <div class="newsitem up" data-kind="talk"><p class="d">2026.09</p><div><span class="k">Upcoming</span><p class="t" data-en="Upcoming presentation “亜急性期入院脳卒中患者におけるDynamic visual acuityの歩行速度依存性の検討” at 第24回日本神経理学療法学会学術大会.">第24回日本神経理学療法学会学術大会にて『亜急性期入院脳卒中患者におけるDynamic visual acuityの歩行速度依存性の検討』の発表を行います。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2026.07</p><div><span class="k">Paper</span><p class="t" data-en="“Tract-based lesion mapping of quiet-standing postural control phenotypes in patients with subacute stroke” accepted in &lt;i&gt;Scientific reports&lt;/i&gt;.">『Tract-based lesion mapping of quiet-standing postural control phenotypes in patients with subacute stroke』が <i>Scientific reports</i> に採択されました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2026.06</p><div><span class="k">Lecture</span><p class="t" data-en="Gave an invited lecture “中枢神経疾患に対する前庭リハビリテーション -基礎知識と評価・治療の概説-” at Saitama NeuroBridge vol. 4 (日本神経理学療法学会・埼玉地方会 研修会).">Saitama NeuroBridge vol. 4 (日本神経理学療法学会・埼玉地方会 研修会)にて『中枢神経疾患に対する前庭リハビリテーション -基礎知識と評価・治療の概説-』の講演を行いました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2026.06</p><div><span class="k">Lecture</span><p class="t" data-en="Gave an invited lecture “中枢神経疾患のバランスと歩行-アウトカムメジャーを活用した評価・理学療法-” at 神経系理学療法学演習（人間総合科学大学）.">神経系理学療法学演習（人間総合科学大学）にて『中枢神経疾患のバランスと歩行-アウトカムメジャーを活用した評価・理学療法-』の講演を行いました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2026.06</p><div><span class="k">Paper</span><p class="t" data-en="“A Case Report on Balance Progress in a Patient with Body Lateropulsion: Focusing on Vestibulo-Ocular Reflex and Subjective Visual Vertical” accepted in &lt;i&gt;Progress in Rehabilitation Medicine&lt;/i&gt;.">『A Case Report on Balance Progress in a Patient with Body Lateropulsion: Focusing on Vestibulo-Ocular Reflex and Subjective Visual Vertical』が <i>Progress in Rehabilitation Medicine</i> に採択されました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2026.06</p><div><span class="k">Paper</span><p class="t" data-en="“Validation and Distribution Characteristics of the Grading of Lateropulsion in Patients With Infratentorial Stroke: A Preliminary Study” accepted in &lt;i&gt;Progress in Rehabilitation Medicine&lt;/i&gt;.">『Validation and Distribution Characteristics of the Grading of Lateropulsion in Patients With Infratentorial Stroke: A Preliminary Study』が <i>Progress in Rehabilitation Medicine</i> に採択されました。</p></div></div>
+      <div class="newsitem hi" data-kind="other"><p class="d">2026.05</p><div><span class="k">Award</span><p class="t" data-en="Received the President&#x27;s Award (co-author) and the Best Paper Award (co-author) at 第5回日本前庭理学療法学会学術大会.">第5回日本前庭理学療法学会学術大会にて 学会長賞(共同演者)・最優秀賞(共同演者) を受賞しました。</p></div></div>
+      <div class="newsitem hi" data-kind="other"><p class="d">2026.04</p><div><span class="k">Grant</span><p class="t" data-en="Awarded a JSPS Grant-in-Aid for Early-Career Scientists: development of a fall prediction model for people living with stroke (2026–2029).">科研費 若手研究「脳卒中者を対象とした転倒予測モデルの開発」（2026–2029）に採択されました。</p></div></div>
+      <div class="newsitem" data-kind="other"><p class="d">2026.04</p><div><span class="k">Appointment</span><p class="t" data-en="Appointed Editorial Board member of &lt;i&gt;BMC Neurology&lt;/i&gt;, Reviewer Board member of &lt;i&gt;Physical Therapy Research&lt;/i&gt;, SIGs member of the World Federation for NeuroRehabilitation, and Part-time Lecturer at Ningen Sogo Kagaku University."><i>BMC Neurology</i> 編集委員、<i>Physical Therapy Research</i> 査読委員、World Federation for NeuroRehabilitation SIGs 委員、人間総合科学大学 非常勤講師に就任しました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2026.03</p><div><span class="k">Lecture</span><p class="t" data-en="Gave an invited lecture “歩行姿勢障害における次世代の神経理学療法-病態の可視化から新たな臨床展開を掴む-」(ファシリテーター)” at 日本神経理学療法学会第8回SIGs参加型フォーラム2026.">日本神経理学療法学会第8回SIGs参加型フォーラム2026にて『歩行姿勢障害における次世代の神経理学療法-病態の可視化から新たな臨床展開を掴む-」(ファシリテーター)』の講演を行いました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2026.03</p><div><span class="k">Paper</span><p class="t" data-en="“Development and validity of composite scores for the instrumented-modified Clinical Test of Sensory Interaction in Balance in inpatients with subacute stroke” published in &lt;i&gt;Gait &amp;amp; Posture&lt;/i&gt;.">『Development and validity of composite scores for the instrumented-modified Clinical Test of Sensory Interaction in Balance in inpatients with subacute stroke』が <i>Gait &amp; Posture</i> に掲載されました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2026.02</p><div><span class="k">Lecture</span><p class="t" data-en="Gave an invited lecture “神経理学療法における尺度開発研究と臨床応用” at 第36回日本神経理学療法学会 サテライトカンファレンス in KOBE.">第36回日本神経理学療法学会 サテライトカンファレンス in KOBEにて『神経理学療法における尺度開発研究と臨床応用』の講演を行いました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2026</p><div><span class="k">Paper</span><p class="t" data-en="“Center-of-Pressure Responses to Optokinetic Stimulation in Patients With Stroke and Age-Matched Healthy Adults: Identifying Sensitive Measures—An Exploratory Study” accepted in &lt;i&gt;Topics in Stroke Rehabilitation&lt;/i&gt;.">『Center-of-Pressure Responses to Optokinetic Stimulation in Patients With Stroke and Age-Matched Healthy Adults: Identifying Sensitive Measures—An Exploratory Study』が <i>Topics in Stroke Rehabilitation</i> に採択されました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2026</p><div><span class="k">Paper</span><p class="t" data-en="“External validation of the walking independence prognostic model TWIST score after stroke: A multicenter, prospective cohort study” accepted in &lt;i&gt;Neurorehabilitation and Neural Repair&lt;/i&gt;.">『External validation of the walking independence prognostic model TWIST score after stroke: A multicenter, prospective cohort study』が <i>Neurorehabilitation and Neural Repair</i> に採択されました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2026</p><div><span class="k">Lecture</span><p class="t" data-en="Gave an invited lecture “末梢・中枢前庭障害に対する前庭リハビリテーション：エビデンスに基づく病態解釈と介入” at 理学療法-臨床・研究・教育, in press.">理学療法-臨床・研究・教育, in pressにて『末梢・中枢前庭障害に対する前庭リハビリテーション：エビデンスに基づく病態解釈と介入』の講演を行いました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2025.12</p><div><span class="k">Paper</span><p class="t" data-en="“Early improvement in vertigo intensity after subacute infratentorial infarction relates to vestibulocerebellar network damage and balance recovery: A retrospective disconnectome study” published in &lt;i&gt;Journal of the Neurological Sciences&lt;/i&gt;.">『Early improvement in vertigo intensity after subacute infratentorial infarction relates to vestibulocerebellar network damage and balance recovery: A retrospective disconnectome study』が <i>Journal of the Neurological Sciences</i> に掲載されました。</p></div></div>
+      <div class="newsitem hi" data-kind="other"><p class="d">2025.10</p><div><span class="k">Award</span><p class="t" data-en="Received the Best Paper Award (co-author) at 第32回群馬県理学療法士学会.">第32回群馬県理学療法士学会にて 最優秀賞(共同演者) を受賞しました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2025.10</p><div><span class="k">Presentation</span><p class="t" data-en="Presented “本邦の神経理学療法領域におけるバランスアウトカム指標の使用状況とその障壁に関するアンケート調査研究” at 第23回日本神経理学療法学会学術大会.">第23回日本神経理学療法学会学術大会にて『本邦の神経理学療法領域におけるバランスアウトカム指標の使用状況とその障壁に関するアンケート調査研究』の発表を行いました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2025.08</p><div><span class="k">Lecture</span><p class="t" data-en="Gave an invited lecture “自施設の理学療法の質向上に活かす研究活動の提案 -施設独自のPDCAサイクルを通して-” at IMSグループ 医療法人社団 明芳会 高島平中央総合病院, 学術研修会.">IMSグループ 医療法人社団 明芳会 高島平中央総合病院, 学術研修会にて『自施設の理学療法の質向上に活かす研究活動の提案 -施設独自のPDCAサイクルを通して-』の講演を行いました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2025.08</p><div><span class="k">Lecture</span><p class="t" data-en="Gave an invited lecture “脳卒中理学療法におけるアウトカムメジャーの活用 -忙しい臨床で効果的に病態解釈と意思決定・予後予測をするためのTips-” at IMSグループ 医療法人社団 明芳会 高島平中央総合病院 研修会.">IMSグループ 医療法人社団 明芳会 高島平中央総合病院 研修会にて『脳卒中理学療法におけるアウトカムメジャーの活用 -忙しい臨床で効果的に病態解釈と意思決定・予後予測をするためのTips-』の講演を行いました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2025.08</p><div><span class="k">Presentation</span><p class="t" data-en="Presented “Effects of VR-based optokinetic stimulation on head and trunk postural sway on a sinusoidal moving platform” at 9th Asia-Oceanian Conference of Physical and Rehabilitation Medicine, in conjunction with the 16th Annual Malaysian Rehabilitation Medicine Conference.">9th Asia-Oceanian Conference of Physical and Rehabilitation Medicine, in conjunction with the 16th Annual Malaysian Rehabilitation Medicine Conferenceにて『Effects of VR-based optokinetic stimulation on head and trunk postural sway on a sinusoidal moving platform』の発表を行いました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2025.07</p><div><span class="k">Paper</span><p class="t" data-en="“Identifying Fall Risk within 6 Months Post-Discharge Through Balance Tasks Analysis in Inpatients with Subacute Stroke: Prospective Cohort Study” published in &lt;i&gt;NeuroRehabilitation&lt;/i&gt;.">『Identifying Fall Risk within 6 Months Post-Discharge Through Balance Tasks Analysis in Inpatients with Subacute Stroke: Prospective Cohort Study』が <i>NeuroRehabilitation</i> に掲載されました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2025.06</p><div><span class="k">Paper</span><p class="t" data-en="“Influences of VR-Based Optokinetic Stimulation on Head and Trunk Instability on a Sinusoidal Moving Platform” published in &lt;i&gt;Journal of Motor Behavior&lt;/i&gt;.">『Influences of VR-Based Optokinetic Stimulation on Head and Trunk Instability on a Sinusoidal Moving Platform』が <i>Journal of Motor Behavior</i> に掲載されました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2025.06</p><div><span class="k">Paper</span><p class="t" data-en="“Impact of frailty risk on postoperative activities of daily living and in‐hospital events in older patients with hydrocephalus using a nationwide Japanese database” published in &lt;i&gt;Geriatrics &amp;amp; Gerontology International&lt;/i&gt;.">『Impact of frailty risk on postoperative activities of daily living and in‐hospital events in older patients with hydrocephalus using a nationwide Japanese database』が <i>Geriatrics &amp; Gerontology International</i> に掲載されました。</p></div></div>
+      <div class="newsitem" data-kind="talk"><p class="d">2025.06</p><div><span class="k">Lecture</span><p class="t" data-en="Gave an invited lecture “前庭リハビリテーションにおけるスマートフォン技術の活用” at Medical Science Digest Vol 51 (7) 臨時増刊号.">Medical Science Digest Vol 51 (7) 臨時増刊号にて『前庭リハビリテーションにおけるスマートフォン技術の活用』の講演を行いました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2025.05</p><div><span class="k">Paper</span><p class="t" data-en="“Effects of subjective visual verticality and visual dependence on balance function in older adults using a smartphone-based virtual reality system.” published in &lt;i&gt;Perception&lt;/i&gt;.">『Effects of subjective visual verticality and visual dependence on balance function in older adults using a smartphone-based virtual reality system.』が <i>Perception</i> に掲載されました。</p></div></div>
+      <div class="newsitem" data-kind="other"><p class="d">2025.05</p><div><span class="k">Appointment</span><p class="t" data-en="Appointed Visiting Researcher at the Mejiro University Otologic Research Institute Clinic and Director of the Japan Vestibular Physical Therapy Association.">目白大学 耳科学研究所クリニック 客員研究員、日本前庭理学療法学会 理事に就任しました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2025.04</p><div><span class="k">Paper</span><p class="t" data-en="“Development and internal validation of a clinical prediction model to predict independence in daily living at discharge for patients with heart failure: analysis using a Japanese national inpatient database real-world dataset.” published in &lt;i&gt;Physiotherapy theory and practice&lt;/i&gt;.">『Development and internal validation of a clinical prediction model to predict independence in daily living at discharge for patients with heart failure: analysis using a Japanese national inpatient database real-world dataset.』が <i>Physiotherapy theory and practice</i> に掲載されました。</p></div></div>
+      <div class="newsitem" data-kind="other"><p class="d">2025.01</p><div><span class="k">Appointment</span><p class="t" data-en="Appointed Editorial Board member of &lt;i&gt;BMC Geriatrics&lt;/i&gt;."><i>BMC Geriatrics</i> 編集委員に就任しました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2024.12</p><div><span class="k">Paper</span><p class="t" data-en="“Test-Retest Reliability of Dynamic Subjective Visual Vertical and Visual Dependency in Older Adults Using Virtual Reality Methods.” published in &lt;i&gt;Perceptual and motor skills&lt;/i&gt;.">『Test-Retest Reliability of Dynamic Subjective Visual Vertical and Visual Dependency in Older Adults Using Virtual Reality Methods.』が <i>Perceptual and motor skills</i> に掲載されました。</p></div></div>
+      <div class="newsitem hi" data-kind="other"><p class="d">2024.10</p><div><span class="k">Award</span><p class="t" data-en="Received the Best Paper Award (co-author) at 第31回群馬県理学療法士学会.">第31回群馬県理学療法士学会にて 最優秀賞(共同演者) を受賞しました。</p></div></div>
+      <div class="newsitem hi" data-kind="other"><p class="d">2024.10</p><div><span class="k">Award</span><p class="t" data-en="Received the Best Paper Award  (first author) at 第43回関東甲信越ブロック理学療法士学会.">第43回関東甲信越ブロック理学療法士学会にて 最優秀賞 (筆頭演者) を受賞しました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2024.09</p><div><span class="k">Paper</span><p class="t" data-en="“Minimal clinically important difference in 6-minute walk distance estimated by multiple methods in inpatients with subacute cardiovascular disease.” published in &lt;i&gt;Physiotherapy theory and practice&lt;/i&gt;.">『Minimal clinically important difference in 6-minute walk distance estimated by multiple methods in inpatients with subacute cardiovascular disease.』が <i>Physiotherapy theory and practice</i> に掲載されました。</p></div></div>
+      <div class="newsitem" data-kind="paper"><p class="d">2024.05</p><div><span class="k">Paper</span><p class="t" data-en="“Accelerometer-based gait characteristics and their discrimination of gait independence in inpatients with subacute stroke.” published in &lt;i&gt;Gait &amp;amp; posture&lt;/i&gt;.">『Accelerometer-based gait characteristics and their discrimination of gait independence in inpatients with subacute stroke.』が <i>Gait &amp; posture</i> に掲載されました。</p></div></div>
+      <div class="newsitem hi" data-kind="other"><p class="d">2024.04</p><div><span class="k">Appointment</span><p class="t" data-en="Appointed Assistant Professor, Department of Physical Therapy, Faculty of Health and Medical Technology, Bunkyo Gakuin University.">文京学院大学 保健医療技術学部 理学療法学科 助教に着任しました。</p></div></div>
+    </div>
+    <div class="pubfoot">
+      <span id="newscount" class="mono"></span>
+      <button type="button" id="newsmore"></button>
+    </div>
+  </div>
+</section>
+
+<section id="recruit">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">Recruitment</p>
+      <h2 data-en="Work with us">共同研究・大学院生募集</h2>
+      <p data-en="Clinical questions are the starting point of every project here. If you have patients, data or an idea that does not fit an existing measure, we would like to hear from you.">臨床の疑問を出発点に研究を組み立てています。目の前の患者さん、手元のデータ、既存の指標では測れない現象 ── そうしたテーマをお持ちの方はぜひご連絡ください。</p>
+    </div>
+    <div class="recgrid">
+      <div class="rec">
+        <p class="n">01</p>
+        <h4 data-en="Graduate students">大学院進学を考えている方</h4>
+        <p data-en="For clinicians who want to take a question from their own ward through design, measurement, analysis and publication.">自分の臨床現場の疑問を、研究デザイン・計測・解析・論文化まで一貫して進めたい理学療法士の方を歓迎します。</p>
+        <ul>
+          <li data-en="Study design and statistics from scratch">研究デザイン・統計解析を一から</li>
+          <li data-en="Support through to English-language publication">英文論文化までの継続的なサポート</li>
+          <li data-en="Working while enrolled is the norm, not the exception">臨床業務と両立しながらの在籍が前提</li>
+        </ul>
+      </div>
+      <div class="rec">
+        <p class="n">02</p>
+        <h4 data-en="Collaborating institutions">共同研究機関の方</h4>
+        <p data-en="Multi-centre data collection on posture, gait and vestibular measures &mdash; especially acute and convalescent stroke units and dizziness clinics.">姿勢・歩行・前庭機能の多施設データ収集を進めています。急性期・回復期の脳卒中病棟、めまい外来との連携を特に歓迎します。</p>
+        <ul>
+          <li data-en="Shared measurement protocols and equipment loan">測定プロトコルの共有・機器の貸与</li>
+          <li data-en="Posturography, IMU and markerless capture">重心動揺計・慣性センサ・マーカーレス計測</li>
+          <li data-en="Support for ethics applications">倫理審査申請のサポート</li>
+        </ul>
+      </div>
+      <div class="rec">
+        <p class="n">03</p>
+        <h4 data-en="Undergraduates &amp; clinicians">学部生・臨床家の方</h4>
+        <p data-en="Lab visits, measurement sessions and study groups on vestibular assessment and balance outcome measures are open to visitors.">前庭機能評価やバランス評価指標に関する測定体験・勉強会・研究室見学を随時受け付けています。</p>
+        <ul>
+          <li data-en="Hands-on sessions with SVV and posturography">SVV・重心動揺計の測定体験</li>
+          <li data-en="Journal club on balance outcome measures">評価指標に関する抄読会</li>
+          <li data-en="Graduation research in the Faculty of Health &amp; Medical Technology">保健医療技術学部での卒業研究</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">Contact</p>
+      <h2 data-en="Get in touch">連絡先</h2>
+    </div>
+    <div class="contact">
+      <div>
+        <h4 data-en="Laboratory">研究室</h4>
+        <p data-en="Tatsuya Igarashi, PhD<br>Department of Physical Therapy, Faculty of Health and Medical Technology,<br>Bunkyo Gakuin University (Fujimino Campus)<br>Saitama, Japan">五十嵐 達也（博士・保健学）<br>文京学院大学 保健医療技術学部 理学療法学科<br>ふじみ野キャンパス（埼玉県ふじみ野市）</p>
+        <p style="margin-top:16px;font-size:12.5px;color:var(--ink-3)" data-en="Enquiries about collaboration, graduate study, lectures and measurement sessions are welcome through the links opposite.">共同研究・大学院進学・講演・測定に関するお問い合わせは、右の各リンクよりご連絡ください。</p>
+      </div>
+      <div>
+        <h4 data-en="Links">リンク</h4>
+        <div class="linkrow" style="margin-top:0">
+          <a href="https://researchmap.jp/igrstty" target="_blank" rel="noopener">researchmap</a>
+          <a href="https://www.bgu.ac.jp/health/staff/tatsuya-igarashi/" target="_blank" rel="noopener" data-en="Bunkyo Gakuin University profile">文京学院大学 教員紹介</a>
+          <a href="https://orcid.org/0000-0001-6864-6316" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://www.bgu.ac.jp/health/" target="_blank" rel="noopener" data-en="Faculty of Health &amp; Medical Technology">保健医療技術学部</a>
+        </div>
+        <p style="margin-top:20px;font-size:13px;color:var(--ink-2);line-height:1.85" data-en="Member societies: World Federation for NeuroRehabilitation · Academy of Neurologic Physical Therapy · International Society of Posture &amp; Gait Research · Japanese Society of Neurological Physical Therapy · Japan Vestibular Physical Therapy Association · Japanese Society for Fall Prevention, and others (15+).">所属学会：World Federation for NeuroRehabilitation／Academy of Neurologic Physical Therapy／International Society of Posture &amp; Gait Research／日本神経理学療法学会／日本前庭理学療法学会／日本転倒予防学会 ほか 15 団体以上</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <p class="note" data-en="Posture, Gait &amp; Vestibular Rehabilitation Research Group, Bunkyo Gakuin University. Content on this page is compiled from publicly available information on researchmap and the university website (retrieved August 2026); please refer to researchmap for the authoritative and complete record.">文京学院大学 理学療法学科 姿勢・歩行・前庭リハビリテーション研究グループ。本サイトの掲載内容は researchmap および大学公式サイトの公開情報（2026年8月時点）をもとに構成しています。最新かつ完全な情報は researchmap をご参照ください。</p>
+    <p class="mono" style="font-size:11px;letter-spacing:.08em">IGARASHI LAB &nbsp;/&nbsp; POSTURE · GAIT · VESTIBULAR</p>
+  </div>
+</footer>
+
+<style>
+.mem,.newsitem{transition:opacity .25s,filter .25s}
+.mem.faded,.newsitem.faded{opacity:.3;filter:saturate(.3)}
+.hero h1 em{position:relative}
+</style>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- bilingual ---------- */
+  var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-en]"));
+  nodes.forEach(function(el){ el.setAttribute("data-ja", el.innerHTML); });
+  var lang = "ja";
+  var btn = document.getElementById("lang");
+  function setLang(next){
+    lang = next;
+    nodes.forEach(function(el){
+      el.innerHTML = el.getAttribute(next === "ja" ? "data-ja" : "data-en");
+    });
+    document.documentElement.lang = next === "ja" ? "ja" : "en";
+    btn.innerHTML = next === "ja" ? "<b>JA</b> / EN" : "JA / <b>EN</b>";
+    apply();
+    applyNews();
+  }
+  btn.addEventListener("click", function(){ setLang(lang === "ja" ? "en" : "ja"); });
+
+  /* ---------- filtering ---------- */
+  var AREA_LABEL = {
+    vestibular:{ja:"前庭リハビリテーション",en:"Vestibular Rehabilitation"},
+    stroke:{ja:"脳卒中とバランス",en:"Stroke & Balance"},
+    gait:{ja:"歩行分析",en:"Gait Analysis"},
+    prognosis:{ja:"予後予測",en:"Prognostic Prediction"},
+    digital:{ja:"デジタルヘルス / AI",en:"Digital Health / AI"}
+  };
+  var pubs   = Array.prototype.slice.call(document.querySelectorAll(".pub"));
+  var projs  = Array.prototype.slice.call(document.querySelectorAll(".proj"));
+  var mems   = Array.prototype.slice.call(document.querySelectorAll(".mem"));
+  var news   = Array.prototype.slice.call(document.querySelectorAll(".newsitem"));
+  var areaBtns = Array.prototype.slice.call(document.querySelectorAll(".area"));
+  var bar = document.getElementById("filterbar");
+  var barName = document.getElementById("filtername");
+  var barCount = document.getElementById("filtercount");
+  var pubEmpty = document.getElementById("pubempty");
+  var projEmpty = document.getElementById("projempty");
+  var activeArea = null, activeType = "all";
+
+  function has(el, area){
+    var a = (el.getAttribute("data-areas") || "").split(/\s+/);
+    return a.indexOf(area) > -1;
+  }
+  function countFor(area){
+    var p = pubs.filter(function(el){ return has(el, area); }).length;
+    var j = projs.filter(function(el){ return has(el, area); }).length;
+    return {p:p, j:j};
+  }
+  areaBtns.forEach(function(b){
+    var a = b.getAttribute("data-area");
+    var c = countFor(a);
+    var slot = b.querySelector("[data-cnt]");
+    slot.setAttribute("data-en", c.p + " works · " + c.j + " projects");
+    slot.innerHTML = "業績 " + c.p + " 件 ・ 研究課題 " + c.j + " 件";
+    slot.setAttribute("data-ja", slot.innerHTML);
+    if (nodes.indexOf(slot) === -1) nodes.push(slot);
+  });
+
+  function paintFilterBar(){
+    if (!activeArea){ bar.hidden = true; return; }
+    bar.hidden = false;
+    barName.textContent = AREA_LABEL[activeArea][lang];
+    var shownP = pubs.filter(function(el){ return !el.classList.contains("dim"); }).length;
+    var shownJ = projs.filter(function(el){ return !el.classList.contains("dim"); }).length;
+    barCount.textContent = lang === "ja"
+      ? "業績 " + shownP + " 件 / 研究課題 " + shownJ + " 件"
+      : shownP + " works / " + shownJ + " projects";
+  }
+
+  function apply(){
+    var matched = [];
+    pubs.forEach(function(el){
+      var okType = activeType === "all" || el.getAttribute("data-type") === activeType;
+      var okArea = !activeArea || has(el, activeArea);
+      var okQ = !query || el.__t.indexOf(query) > -1;
+      var ok = okType && okArea && okQ;
+      el.classList.toggle("dim", !ok);
+      if (ok) matched.push(el);
+    });
+    matched.forEach(function(el, i){ el.classList.toggle("over", i >= shown); });
+    var visible = Math.min(shown, matched.length);
+    pubCount.textContent = lang === "ja"
+      ? "全 " + matched.length + " 件中 " + visible + " 件を表示"
+      : "Showing " + visible + " of " + matched.length;
+    more.hidden = matched.length <= shown;
+    more.textContent = lang === "ja"
+      ? "さらに表示（残り " + (matched.length - shown) + " 件）"
+      : "Show more (" + (matched.length - shown) + " remaining)";
+    search.placeholder = lang === "ja" ? "タイトル・著者・学会誌名で検索" : "Search title, author or journal";
+    projs.forEach(function(el){
+      el.classList.toggle("dim", !(!activeArea || has(el, activeArea)));
+    });
+    mems.forEach(function(el){
+      el.classList.toggle("faded", !!activeArea && !has(el, activeArea));
+    });
+    news.forEach(function(el){ el.classList.remove("faded"); });
+    areaBtns.forEach(function(b){
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-area") === activeArea));
+    });
+    pubEmpty.hidden = matched.length > 0;
+    projEmpty.hidden = projs.some(function(el){ return !el.classList.contains("dim"); });
+    paintFilterBar();
+  }
+
+  areaBtns.forEach(function(b){
+    b.addEventListener("click", function(){
+      var a = b.getAttribute("data-area");
+      activeArea = (activeArea === a) ? null : a;
+      shown = PAGE;
+      apply();
+      if (activeArea){
+        var y = document.getElementById("publications").getBoundingClientRect().top + window.pageYOffset - 100;
+        window.scrollTo({top:y, behavior: reduce ? "auto" : "smooth"});
+      }
+    });
+  });
+  document.getElementById("clearfilter").addEventListener("click", function(){
+    activeArea = null; shown = PAGE; apply();
+  });
+
+  var PAGE = 25, shown = PAGE, query = "";
+  var search = document.getElementById("pubsearch");
+  var more = document.getElementById("pubmore");
+  var pubCount = document.getElementById("pubcount");
+  pubs.forEach(function(el){ el.__t = el.textContent.toLowerCase(); });
+
+  search.addEventListener("input", function(){
+    query = search.value.trim().toLowerCase();
+    shown = PAGE; apply();
+  });
+  more.addEventListener("click", function(){ shown += PAGE * 2; apply(); });
+
+  var tabs = Array.prototype.slice.call(document.querySelectorAll("#pubtabs button"));
+  tabs.forEach(function(t){
+    var type = t.getAttribute("data-type");
+    var n = type === "all" ? pubs.length : pubs.filter(function(el){ return el.getAttribute("data-type") === type; }).length;
+    var tail = ' <span class="n">' + n + '</span>';
+    t.setAttribute("data-ja", t.getAttribute("data-ja") + tail);
+    t.setAttribute("data-en", t.getAttribute("data-en") + tail);
+    t.innerHTML = t.getAttribute(lang === "ja" ? "data-ja" : "data-en");
+    t.addEventListener("click", function(){
+      activeType = type;
+      shown = PAGE;
+      tabs.forEach(function(x){ x.setAttribute("aria-selected", String(x === t)); });
+      apply();
+    });
+  });
+
+  /* ---------- news list ---------- */
+  var NPAGE = 20, newsShown = NPAGE, newsKind = "all";
+  var newsCount = document.getElementById("newscount");
+  var newsMore = document.getElementById("newsmore");
+  var newsTabs = Array.prototype.slice.call(document.querySelectorAll("#newstabs button"));
+
+  function applyNews(){
+    var matched = [];
+    news.forEach(function(el){
+      var ok = newsKind === "all" || el.getAttribute("data-kind") === newsKind;
+      el.style.display = ok ? "" : "none";
+      if (ok) matched.push(el);
+    });
+    matched.forEach(function(el, i){ el.classList.toggle("over", i >= newsShown); });
+    var visible = Math.min(newsShown, matched.length);
+    newsCount.textContent = lang === "ja"
+      ? "全 " + matched.length + " 件中 " + visible + " 件を表示"
+      : "Showing " + visible + " of " + matched.length;
+    newsMore.hidden = matched.length <= newsShown;
+    newsMore.textContent = lang === "ja"
+      ? "さらに表示（残り " + (matched.length - newsShown) + " 件）"
+      : "Show more (" + (matched.length - newsShown) + " remaining)";
+  }
+  newsTabs.forEach(function(t){
+    var kind = t.getAttribute("data-kind");
+    var n = kind === "all" ? news.length : news.filter(function(el){ return el.getAttribute("data-kind") === kind; }).length;
+    var tail = ' <span class="n">' + n + '</span>';
+    t.setAttribute("data-ja", t.getAttribute("data-ja") + tail);
+    t.setAttribute("data-en", t.getAttribute("data-en") + tail);
+    t.innerHTML = t.getAttribute(lang === "ja" ? "data-ja" : "data-en");
+    t.addEventListener("click", function(){
+      newsKind = kind; newsShown = NPAGE;
+      newsTabs.forEach(function(x){ x.setAttribute("aria-selected", String(x === t)); });
+      applyNews();
+    });
+  });
+  newsMore.addEventListener("click", function(){ newsShown += NPAGE * 2; applyNews(); });
+  applyNews();
+
+  /* ---------- centre-of-pressure trace ---------- */
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var cv = document.getElementById("sway"), ctx = cv.getContext("2d");
+  var W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var col = {trace:"#0d6d7b", vert:"#9c5f14", line:"#c9d3da"};
+  function readColors(){
+    var cs = getComputedStyle(document.documentElement);
+    col.trace = cs.getPropertyValue("--trace").trim() || col.trace;
+    col.vert  = cs.getPropertyValue("--vert").trim()  || col.vert;
+    col.line  = cs.getPropertyValue("--line").trim()  || col.line;
+  }
+  function resize(){
+    var r = cv.parentElement.getBoundingClientRect();
+    W = r.width; H = r.height;
+    cv.width = Math.max(1, Math.floor(W * dpr));
+    cv.height = Math.max(1, Math.floor(H * dpr));
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    seed();
+  }
+  var pts = [], x = 0, y = 0, vx = 0, vy = 0, t = 0;
+  function step(){
+    t += 0.016;
+    var k = 0.0026, damp = 0.978;
+    vx += (-k * x) + (Math.random() - 0.5) * 0.46 + Math.sin(t * 0.7) * 0.06;
+    vy += (-k * y) + (Math.random() - 0.5) * 0.4 + Math.cos(t * 0.43) * 0.05;
+    vx *= damp; vy *= damp;
+    x += vx; y += vy;
+    pts.push([x, y]);
+    if (pts.length > 900) pts.shift();
+  }
+  function seed(){
+    pts = []; x = 0; y = 0; vx = 0; vy = 0;
+    for (var i = 0; i < 700; i++) step();
+  }
+  function draw(){
+    if (!W) return;
+    ctx.clearRect(0, 0, W, H);
+    var cx = W > 900 ? W * 0.76 : W * 0.5;
+    var cy = H * 0.5;
+    var sc = Math.min(W, H) / 330;
+
+    /* reference grid + gravitational vertical */
+    ctx.save();
+    ctx.globalAlpha = 0.35;
+    ctx.strokeStyle = col.line; ctx.lineWidth = 1;
+    for (var g = -3; g <= 3; g++){
+      ctx.beginPath();
+      ctx.moveTo(cx + g * 34 * sc, cy - 130 * sc); ctx.lineTo(cx + g * 34 * sc, cy + 130 * sc);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(cx - 130 * sc, cy + g * 34 * sc); ctx.lineTo(cx + 130 * sc, cy + g * 34 * sc);
+      ctx.stroke();
+    }
+    ctx.restore();
+
+    ctx.save();
+    ctx.globalAlpha = 0.55;
+    ctx.strokeStyle = col.vert; ctx.lineWidth = 1.2; ctx.setLineDash([5, 6]);
+    ctx.beginPath(); ctx.moveTo(cx, cy - 145 * sc); ctx.lineTo(cx, cy + 145 * sc); ctx.stroke();
+    ctx.restore();
+
+    /* sway trace, fading into the past */
+    var n = pts.length;
+    ctx.lineCap = "round"; ctx.lineJoin = "round";
+    for (var i = 1; i < n; i++){
+      var a = i / n;
+      ctx.strokeStyle = col.trace;
+      ctx.globalAlpha = Math.pow(a, 2.6) * 0.5;
+      ctx.lineWidth = 0.6 + a * 1.4;
+      ctx.beginPath();
+      ctx.moveTo(cx + pts[i-1][0] * sc, cy + pts[i-1][1] * sc);
+      ctx.lineTo(cx + pts[i][0] * sc, cy + pts[i][1] * sc);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 0.9;
+    ctx.fillStyle = col.trace;
+    ctx.beginPath();
+    ctx.arc(cx + pts[n-1][0] * sc, cy + pts[n-1][1] * sc, 3, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+  function loop(){
+    step(); draw();
+    requestAnimationFrame(loop);
+  }
+  readColors(); resize(); draw();
+  window.addEventListener("resize", function(){ resize(); draw(); });
+  if (window.matchMedia){
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    if (mq.addEventListener) mq.addEventListener("change", function(){ readColors(); draw(); });
+  }
+  if (!reduce) requestAnimationFrame(loop);
+
+  /* ---------- scroll spy + reveal ---------- */
+  var links = Array.prototype.slice.call(document.querySelectorAll("#nav a"));
+  var secs = links.map(function(a){ return document.querySelector(a.getAttribute("href")); });
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      var i = secs.indexOf(e.target);
+      links.forEach(function(l, j){ l.classList.toggle("on", j === i); });
+    });
+  }, {rootMargin:"-45% 0px -50% 0px"});
+  secs.forEach(function(s){ if (s) spy.observe(s); });
+
+  var rev = Array.prototype.slice.call(document.querySelectorAll(".sechead, .area, .pi, .mem, .proj, .rec, .approach > div, .contact"));
+  rev.forEach(function(el, i){
+    el.classList.add("reveal");
+    el.style.transitionDelay = Math.min(i % 4, 3) * 60 + "ms";
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  }, {rootMargin:"0px 0px -8% 0px", threshold:0.05});
+  rev.forEach(function(el){ io.observe(el); });
+
+  apply();
+})();
+</script>
+
+<script>
+/* standalone only: light / dark toggle (the artifact host supplies this itself) */
+(function(){
+  var root = document.documentElement;
+  var bar = document.querySelector(".masthead .bar");
+  if (!bar) return;
+  var b = document.createElement("button");
+  b.className = "langbtn"; b.type = "button";
+  b.setAttribute("aria-label", "配色を切り替える / Toggle colour theme");
+  b.style.marginLeft = "6px";
+  function cur(){
+    return root.getAttribute("data-theme")
+      || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }
+  function paint(){ b.textContent = cur() === "dark" ? "\u263C" : "\u263E"; }
+  b.addEventListener("click", function(){
+    var next = cur() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    paint();
+  });
+  bar.appendChild(b);
+  paint();
+})();
+</script>
+</body>
+</html>
