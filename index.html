@@ -71,8 +71,8 @@
 <body>
 <style>
 :root{
-  --paper:#eaeef1;
-  --surface:#f8fafb;
+  --paper:#edeff1;
+  --surface:#fbfcfd;
   --surface-2:#dfe5ea;
   --line:#c9d3da;
   --line-soft:#dce3e8;
@@ -127,6 +127,7 @@ body{
   font-family:"Archivo","Zen Kaku Gothic New",system-ui,sans-serif;
   font-size:16px;
   line-height:1.8;
+  letter-spacing:.01em;
   -webkit-font-smoothing:antialiased;
 }
 h1,h2,h3,h4{margin:0;text-wrap:balance;line-height:1.28;font-weight:600}
@@ -209,19 +210,23 @@ img{max-width:100%}
   text-transform:uppercase;border:1px solid var(--line);border-radius:999px;
   padding:5px 12px;color:var(--ink-2);background:var(--surface);
 }
-.counters{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.counters div{background:var(--surface);padding:16px 18px}
+.counters{display:flex;flex-direction:column}
+.counters div{
+  display:flex;align-items:baseline;gap:18px;
+  padding:15px 2px;border-bottom:1px solid var(--line-soft);
+}
+.counters div:first-child{border-top:1px solid var(--line)}
 .counters b{
-  display:block;font-family:"IBM Plex Mono",monospace;font-size:26px;
-  font-weight:500;color:var(--trace);letter-spacing:-.02em;line-height:1.2;
+  font-family:"IBM Plex Mono",monospace;font-size:27px;min-width:2.9em;text-align:right;
+  font-weight:500;color:var(--ink);letter-spacing:-.02em;line-height:1.1;
   font-variant-numeric:tabular-nums;
 }
-.counters small{font-size:11px;color:var(--ink-3);letter-spacing:.05em;line-height:1.5;display:block;margin-top:2px}
+.counters small{font-size:12px;color:var(--ink-2);letter-spacing:.04em;line-height:1.5}
 
 /* ---------- sections ---------- */
-section{padding:76px 0;border-bottom:1px solid var(--line-soft)}
+section{padding:92px 0;border-bottom:1px solid var(--line-soft)}
 section:last-of-type{border-bottom:0}
-.sechead{display:flex;flex-direction:column;gap:14px;margin-bottom:38px}
+.sechead{display:flex;flex-direction:column;gap:13px;margin-bottom:36px}
 .sechead h2{font-size:clamp(23px,3vw,32px);letter-spacing:-.02em}
 .sechead h2 span{color:var(--ink-3);font-weight:400;font-size:.62em;margin-left:.7em;letter-spacing:0}
 .sechead p{color:var(--ink-2);max-width:64ch;font-size:14.5px}
@@ -235,7 +240,7 @@ section:last-of-type{border-bottom:0}
   color:inherit;font:inherit;border-radius:3px;
   transition:border-color .2s,transform .2s,box-shadow .2s;
 }
-.area:hover{border-color:var(--trace);transform:translateY(-3px);box-shadow:var(--shadow)}
+.area:hover{border-color:var(--trace);transform:translateY(-2px);box-shadow:var(--shadow)}
 .area[aria-pressed="true"]{border-color:var(--trace);box-shadow:inset 0 0 0 1px var(--trace),var(--shadow)}
 .area[aria-pressed="true"] .glyph{background:var(--trace-ghost)}
 .area .glyph{
@@ -330,7 +335,7 @@ section:last-of-type{border-bottom:0}
 
 .netstats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:20px}
 .netstats div{background:var(--surface);padding:16px 20px}
-.netstats b{display:block;font-family:"IBM Plex Mono",monospace;font-size:24px;font-weight:500;color:var(--trace);letter-spacing:-.02em;line-height:1.2;font-variant-numeric:tabular-nums}
+.netstats b{display:block;font-family:"IBM Plex Mono",monospace;font-size:24px;font-weight:500;color:var(--ink);letter-spacing:-.02em;line-height:1.2;font-variant-numeric:tabular-nums}
 .netstats small{display:block;margin-top:2px;font-size:11px;color:var(--ink-3);letter-spacing:.05em}
 .partners{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
 .partners > div{grid-column:span 2}
@@ -405,9 +410,10 @@ section:last-of-type{border-bottom:0}
 .publist{border-top:1px solid var(--line);margin-top:18px}
 .pub{
   display:grid;grid-template-columns:78px minmax(0,1fr);gap:22px;
-  padding:18px 4px;border-bottom:1px solid var(--line-soft);
-  transition:opacity .25s,filter .25s;
+  padding:18px 14px;margin:0 -14px;border-bottom:1px solid var(--line-soft);
+  transition:background .18s;
 }
+.pub:hover{background:var(--surface)}
 .pub .yr{
   font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3);
   font-variant-numeric:tabular-nums;padding-top:3px;letter-spacing:.02em;
@@ -488,10 +494,10 @@ section:last-of-type{border-bottom:0}
 .contact h4{font-size:15px;margin-bottom:14px}
 .contact p{font-size:13.5px;color:var(--ink-2);line-height:1.85}
 
-footer{padding:44px 0 60px;color:var(--ink-3);font-size:12.5px}
-footer .frow{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:flex-start}
+footer{padding:46px 0 64px;color:var(--ink-3);font-size:12.5px;border-top:1px solid var(--line)}
+footer .frow{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;align-items:flex-start}
 footer a{color:var(--ink-2)}
-footer .note{max-width:56ch;line-height:1.75;font-size:12px}
+footer .note{max-width:58ch;line-height:1.9;font-size:12px}
 
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
@@ -504,6 +510,10 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
 /* ---------- responsive ---------- */
 @media (max-width:1180px){
   .areas{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:900px){
+  .masthead .bar{flex-wrap:wrap;padding-top:8px;min-height:0;padding-bottom:0}
+  .sitenav{order:3;width:100%;margin:0 -24px;padding:6px 24px 8px;border-top:1px solid var(--line-soft)}
 }
 @media (max-width:1020px){
   .areas{grid-template-columns:repeat(2,1fr)}
@@ -522,11 +532,11 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
 @media (max-width:760px){
   body{font-size:15px}
   .wrap{padding:0 18px}
-  section{padding:54px 0}
+  section{padding:60px 0}
   .hero .wrap{padding-top:56px;padding-bottom:56px}
   .masthead .bar{min-height:56px;gap:12px}
   .brand .sub{display:none}
-  .sitenav{order:3;width:100%;margin:0 -18px;padding:0 18px 8px;border-top:1px solid var(--line-soft)}
+  .sitenav{margin:0 -18px;padding:6px 18px 8px}
   .masthead .bar{flex-wrap:wrap;padding-top:8px}
   .areas,.projgrid,.memgrid{grid-template-columns:1fr}
   .mission{padding:46px 0}
@@ -578,7 +588,7 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
         <p class="eyebrow" data-en="Research Network &nbsp;·&nbsp; Bunkyo Gakuin University">Research Network &nbsp;·&nbsp; 文京学院大学 理学療法学科</p>
         <h1 style="margin-top:22px" data-en="Explaining the <em>mechanisms</em> of postural and gait disorder and falls &mdash; and establishing individualised assessment, prediction and rehabilitation.">姿勢・歩行障害と転倒の<em>メカニズム</em>を解明し、<br>個別化された評価・予測・<span class="nb">リハビリテーション</span>の確立を目指す。</h1>
         <p class="jptitle" data-en="Posture, Gait &amp; Vestibular Rehabilitation Research Group">Posture, Gait &amp; Vestibular Rehabilitation Research Group</p>
-        <p class="lede" data-en="We work with people living with neurological disease, vestibular hypofunction and older adults &mdash; measuring posture and gait in the ward and the clinic, and turning those measurements into prognostic models and individualised programmes. In parallel we run basic research on the biomechanics of postural control and on assistive technology, so that what is learned in the laboratory becomes a test, a device or a programme that works at the bedside.">神経疾患・前庭機能低下・高齢者を対象に、臨床現場で姿勢・歩行を計測し、outcome measure の開発・検証から予後予測モデルと個別化プログラムへとつなげています。あわせて、姿勢制御のバイオメカニクスと支援工学に関する基礎研究にも取り組み、実験室で得た知見を臨床で使える評価・機器・プログラムへと還元しています。</p>
+        <p class="lede" data-en="Clinical research on outcome measures, prognostic models and individualised programmes, alongside basic research on the biomechanics of postural control and on assistive technology &mdash; two halves of the same question, pursued together.">outcome measure の開発・検証から予後予測、個別化プログラムへとつなぐ臨床研究と、姿勢制御のバイオメカニクス・支援工学に関する基礎研究。この二つを両輪として進めています。</p>
         <div class="hero-meta">
           <span class="tagpill">Vestibular Rehabilitation</span>
           <span class="tagpill">Stroke &amp; Balance</span>
@@ -601,11 +611,11 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
   <div class="wrap">
     <p class="eyebrow" style="margin-bottom:30px">Mission</p>
     <div class="mission-grid">
-      <p class="stmt" data-en="<span class=&quot;lead&quot;>We work to explain the mechanisms of postural and gait disorder and falls in neurological disease, vestibular hypofunction and older adults, and to establish individualised assessment, prediction and rehabilitation.</span><span class=&quot;sub&quot;>Alongside this clinical work, we run basic research on postural control using biomechanical methods, and on assistive technology &mdash; because a measure only becomes useful once the mechanism behind it is understood.</span>"><span class="lead">神経疾患・前庭機能低下・高齢者に対する姿勢・歩行障害と転倒のメカニズムを解明し、個別化された評価・予測・リハビリテーションの確立を目指しています。</span><span class="sub">あわせて、バイオメカニクス手法を用いた姿勢制御の基礎研究と、支援工学に関する研究にも取り組んでいます。現象のメカニズムが分かって初めて、評価指標は臨床で意味を持つと考えているためです。</span></p>
+      <p class="stmt" data-en="<span class=&quot;lead&quot;>We work with people living with neurological disease, vestibular hypofunction and older adults. Acute and convalescent wards, dizziness clinics and the motion-analysis laboratory each allow different things to be measured, and every study is built around what that setting can actually deliver.</span><span class=&quot;sub&quot;>Alongside this clinical work, we run basic research on postural control using biomechanical methods, and on assistive technology &mdash; because a measure only becomes useful once the mechanism behind it is understood.</span>"><span class="lead">対象は、脳卒中をはじめとする神経疾患、前庭機能低下、そして高齢者です。急性期・回復期の病棟、めまい外来、動作解析室と、それぞれの場面で何がどこまで測れるのかを見極めながら研究を組み立てています。</span><span class="sub">あわせて、バイオメカニクス手法を用いた姿勢制御の基礎研究と、支援工学に関する研究にも取り組んでいます。現象のメカニズムが分かって初めて、評価指標は臨床で意味を持つと考えているためです。</span></p>
       <div class="pillars">
         <div>
           <h4><i>Clinical</i><span data-en="Assessment · Prediction · Rehabilitation">評価・予測・リハビリテーション</span></h4>
-          <p data-en="Outcome measures developed and validated in acute and convalescent wards and dizziness clinics, then turned into prognostic models and individualised programmes.">急性期・回復期病棟やめまい外来で outcome measure を開発・検証し、予後予測モデルと個別化プログラムへ展開します。</p>
+          <p data-en="Lateropulsion, sensory organisation, subjective visual vertical, trunk acceleration &mdash; measures developed and validated against the outcomes that matter: walking independence, ADL and falls.">Lateropulsion、感覚統合、自覚的視性垂直位、体幹加速度。歩行自立・ADL・転倒という帰結に照らして、指標を開発し検証します。</p>
         </div>
         <div>
           <h4><i>Basic</i><span data-en="Biomechanics of postural control &amp; assistive technology">姿勢制御のバイオメカニクスと支援工学</span></h4>
@@ -769,7 +779,7 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
         </div>
       </div>
       <div class="pi-body">
-        <p class="quote" data-en="&ldquo;We want to explain the mechanisms of postural and gait disorder and falls in neurological disease, vestibular hypofunction and older adults &mdash; and to establish individualised assessment, prediction and rehabilitation.&rdquo;">「神経疾患・前庭機能低下・高齢者に対する姿勢・歩行障害と転倒のメカニズムを解明し、個別化された評価・予測・リハビリテーションの確立を目指しています。」</p>
+        <p class="quote" data-en="&ldquo;I spent fourteen years on the ward before moving to the university. The questions I work on now are the ones I could not answer at the bedside.&rdquo;">「臨床で14年間、患者さんの姿勢と歩行を見てきました。そこで答えを出せなかった問いが、いまの研究テーマになっています。」</p>
         <dl class="deflist">
           <dt data-en="Degree">学位</dt>
           <dd data-en="PhD in Health Sciences, Gunma University Graduate School (2023)<br>MSc in Health Sciences, Gunma University Graduate School (2020)">博士（保健学）群馬大学大学院 保健学研究科 博士後期課程 修了（2023）<br>修士（保健学）群馬大学大学院 保健学研究科（2020）</dd>
@@ -861,7 +871,7 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
     <div class="sechead">
       <p class="eyebrow">Publications</p>
       <h2 data-en="Papers, case reports and conference work">論文・学会業績</h2>
-      <p data-en="The complete record held on researchmap: 62 peer-reviewed papers, 158 conference presentations and invited talks. Underlined authors are lab members; titles link to the DOI where one exists.">researchmap に登録されている全業績です（査読付き論文 62 編、学会発表・招待講演 158 件）。下線は研究室メンバー、DOI のある論文はタイトルから原著へ移動できます。</p>
+      <p data-en="The complete record: 62 peer-reviewed papers and 158 conference presentations and invited talks. Titles link to the DOI where one exists.">査読付き論文 62 編、学会発表・招待講演 158 件の全業績です。DOI のある論文はタイトルから原著へ移動できます。</p>
     </div>
 
     <div class="pubtools">
@@ -3248,7 +3258,7 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
     <div class="contact">
       <div>
         <h4 data-en="Laboratory">研究室</h4>
-        <p data-en="Tatsuya Igarashi, PhD<br>Department of Physical Therapy, Faculty of Health and Medical Technology,<br>Bunkyo Gakuin University (Fujimino Campus)<br>Saitama, Japan">五十嵐 達也（博士・保健学）<br>文京学院大学 保健医療技術学部 理学療法学科<br>ふじみ野キャンパス（埼玉県ふじみ野市）</p>
+        <p data-en="Department of Physical Therapy, Faculty of Health and Medical Technology,<br>Bunkyo Gakuin University &mdash; Fujimino Campus, Saitama, Japan">文京学院大学 保健医療技術学部 理学療法学科<br>ふじみ野キャンパス（埼玉県ふじみ野市）</p>
         <p style="margin-top:16px;font-size:12.5px;color:var(--ink-3)" data-en="Enquiries about collaboration, graduate study, lectures and measurement sessions are welcome through the links opposite.">共同研究・大学院進学・講演・測定に関するお問い合わせは、右の各リンクよりご連絡ください。</p>
       </div>
       <div>
@@ -3268,8 +3278,8 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
 
 <footer>
   <div class="wrap frow">
-    <p class="note" data-en="Posture, Gait &amp; Vestibular Rehabilitation Research Group, Bunkyo Gakuin University. Content on this page is compiled from publicly available information on researchmap and the university website (retrieved August 2026); please refer to researchmap for the authoritative and complete record.">文京学院大学 理学療法学科 姿勢・歩行・前庭リハビリテーション研究グループ。本サイトの掲載内容は researchmap および大学公式サイトの公開情報（2026年8月時点）をもとに構成しています。最新かつ完全な情報は researchmap をご参照ください。</p>
-    <p class="mono" style="font-size:11px;letter-spacing:.08em">IGARASHI LAB &nbsp;/&nbsp; POSTURE · GAIT · VESTIBULAR</p>
+    <p class="note" data-en="Posture, Gait &amp; Vestibular Rehabilitation Research Group, Department of Physical Therapy, Bunkyo Gakuin University. Compiled from researchmap and the university website, August 2026.">文京学院大学 保健医療技術学部 理学療法学科　姿勢・歩行・前庭リハビリテーション研究グループ<br>掲載内容は researchmap および大学公式サイトの公開情報（2026年8月時点）に基づきます。</p>
+    <p class="mono" style="font-size:11px;letter-spacing:.08em">TATSUYA IGARASHI LAB &nbsp;/&nbsp; POSTURE · GAIT · VESTIBULAR</p>
   </div>
 </footer>
 
@@ -3507,9 +3517,9 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
     ctx.clearRect(0, 0, W, H);
     var narrow = W <= 1020;
     var cx = narrow ? W * 0.74 : W * 0.76;
-    var cy = narrow ? H * 0.7 : H * 0.5;
-    var sc = Math.min(W, H) / 330;
-    var fade = narrow ? 0.45 : 1;
+    var cy = narrow ? H * 0.72 : H * 0.34;
+    var sc = Math.min(W, H) / 360;
+    var fade = narrow ? 0.45 : 0.85;
 
     /* reference grid + gravitational vertical */
     ctx.save();
