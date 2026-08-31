@@ -168,8 +168,8 @@ img{max-width:100%}
 .hero .wrap{position:relative;z-index:2;padding-top:66px;padding-bottom:72px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:end}
 .hero h1{
-  font-size:clamp(28px,4.6vw,52px);letter-spacing:-.025em;font-weight:600;
-  line-height:1.18;
+  font-size:clamp(26px,4.2vw,46px);letter-spacing:-.025em;font-weight:600;
+  line-height:1.22;
 }
 .hero h1 .ln{display:block;white-space:nowrap}
 .hero h1 em{font-style:normal;color:var(--trace)}
@@ -299,6 +299,13 @@ section:last-of-type{border-bottom:0}
 .linkrow a:hover{border-color:var(--trace);color:var(--ink)}
 .linkrow a::after{content:"↗";font-size:10px;color:var(--ink-3)}
 
+.partners{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.partners > div{background:var(--surface);padding:24px 26px}
+.partners h4{font-size:13.5px;display:flex;align-items:baseline;gap:10px;margin-bottom:14px}
+.partners h4 i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:10px;letter-spacing:.12em;color:var(--vert);text-transform:uppercase}
+.partners ul{display:flex;flex-direction:column;gap:9px}
+.partners li{font-size:13.5px;color:var(--ink-2);line-height:1.6;padding-left:16px;position:relative}
+.partners li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:1px;background:var(--trace)}
 .memgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .mem{
   background:var(--surface);border:1px solid var(--line);padding:20px;
@@ -461,6 +468,7 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
   .areas{grid-template-columns:repeat(2,1fr)}
   .mission-grid{grid-template-columns:1fr;gap:34px}
   .memgrid{grid-template-columns:repeat(2,1fr)}
+  .partners{grid-template-columns:1fr}
   .hero-grid{grid-template-columns:1fr;gap:38px;align-items:start}
   .approach{grid-template-columns:1fr}
   .recgrid{grid-template-columns:1fr}
@@ -524,7 +532,7 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
     <div class="hero-grid">
       <div>
         <p class="eyebrow" data-en="Research Network &nbsp;·&nbsp; Bunkyo Gakuin University">Research Network &nbsp;·&nbsp; 文京学院大学 理学療法学科</p>
-        <h1 style="margin-top:22px" data-en="Measuring the body&rsquo;s <em>upright</em> sense &mdash; and rebuilding it."><span class="ln">姿勢と歩行の<em>ゆらぎ</em>を</span><span class="ln">測り、転倒を予測する。</span></h1>
+        <h1 style="margin-top:22px" data-en="Measure the <em>sway</em>, predict the fall, build the programme."><span class="ln">姿勢と歩行の<em>ゆらぎ</em>を測り、</span><span class="ln">転倒を予測し、</span><span class="ln">介入プログラムをつくる。</span></h1>
         <p class="jptitle" data-en="Posture, Gait &amp; Vestibular Rehabilitation Research Group">Posture, Gait &amp; Vestibular Rehabilitation Research Group</p>
         <p class="lede" data-en="We study how the brain, the vestibular system and the body build a sense of vertical &mdash; and why it fails. Working across stroke units, vestibular clinics and biomechanics labs, we turn posture and gait measurement into individualised assessment, prediction and rehabilitation.">神経疾患・前庭機能低下・高齢者における姿勢・歩行障害と転倒のメカニズムを解明し、個別化された評価・予測・リハビリテーションの確立を目指しています。臨床現場での outcome measure の開発・検証と、バイオメカニクス手法による姿勢制御の基礎研究を両輪としています。</p>
         <div class="hero-meta">
@@ -698,8 +706,8 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
   <div class="wrap">
     <div class="sechead">
       <p class="eyebrow">Members</p>
-      <h2 data-en="The people behind the measurements">メンバー</h2>
-      <p data-en="A distributed group: a university laboratory at its centre, with clinicians and researchers across hospitals and universities who run the studies where the patients are.">大学の研究室を中心に、病院・大学に所属する臨床家・研究者が参加する分散型のネットワークです。臨床現場でデータが取れることを最優先に研究を設計しています。</p>
+      <h2 data-en="The group and its partner institutions">メンバー・共同研究機関</h2>
+      <p data-en="A distributed group: a university laboratory at its centre, with clinicians and researchers at the partner institutions below, who run the studies where the patients are.">大学の研究室を中心に、下記の教育機関・医療機関の臨床家・研究者とともに研究を進めています。臨床現場でデータが取れることを最優先に研究を設計しています。</p>
     </div>
 
     <div class="pi">
@@ -736,43 +744,30 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
       </div>
     </div>
 
-    <div class="memgrid">
-      <div class="mem" data-areas="stroke gait">
-        <p class="role" data-en="Collaborating Researcher">共同研究者</p>
-        <div>
-          <h4>根津 利也</h4>
-        </div>
-        <p class="aff" data-en="Juntendo University Graduate School">順天堂大学大学院</p>
-        <div class="chips"><span class="chip v" data-en="Clinical research">臨床研究</span></div>
+    <div class="partners">
+      <div>
+        <h4><i>Academic</i><span data-en="Universities &amp; research institutes">教育・研究機関</span></h4>
+        <ul>
+          <li data-en="Gunma University">群馬大学</li>
+          <li data-en="Ibaraki Prefectural University of Health Sciences">茨城県立医療大学</li>
+          <li data-en="Mejiro University Otologic Research Institute Clinic">目白大学 耳科学研究所クリニック</li>
+          <li data-en="Gunma Paz University">群馬パース大学</li>
+          <li data-en="Juntendo University">順天堂大学</li>
+          <li data-en="Tohoku Bunka Gakuen University">東北文化学園大学</li>
+        </ul>
       </div>
-      <div class="mem" data-areas="vestibular stroke">
-        <p class="role" data-en="Collaborating Researcher">共同研究者</p>
-        <div>
-          <h4 data-en="Naoya Yamamoto">山本 直弥</h4>
-          <p class="en">Naoya Yamamoto</p>
-        </div>
-        <p class="aff" data-en="Shonan Keiiku Hospital">湘南慶育病院</p>
-        <div class="chips"><span class="chip">Vestibular</span><span class="chip">Stroke</span></div>
-      </div>
-      <div class="mem" data-areas="vestibular digital stroke">
-        <p class="role" data-en="Collaborating Researcher">共同研究者</p>
-        <div>
-          <h4 data-en="Shota Hayashi">林 翔太</h4>
-          <p class="en">Shota Hayashi</p>
-        </div>
-        <p class="aff" data-en="Gunma Paz University">群馬パース大学</p>
-        <div class="chips"><span class="chip">Vestibular</span><span class="chip">Digital</span></div>
-      </div>
-      <div class="mem" data-areas="stroke gait">
-        <p class="role" data-en="Collaborating Researcher">共同研究者</p>
-        <div>
-          <h4>吉川 大志</h4>
-        </div>
-        <p class="aff" data-en="Tohoku Bunka Gakuen University">東北文化学園大学</p>
-        <div class="chips"><span class="chip v" data-en="Clinical research">臨床研究</span></div>
+      <div>
+        <h4><i>Clinical</i><span data-en="Hospitals">医療機関</span></h4>
+        <ul>
+          <li data-en="Shonan Keiiku Hospital">湘南慶育病院</li>
+          <li data-en="IMS Itabashi Rehabilitation Hospital">イムス板橋リハビリテーション病院</li>
+          <li data-en="Shuwa General Hospital">秀和総合病院</li>
+          <li data-en="Takashimadaira Chuo General Hospital">高島平中央総合病院</li>
+          <li data-en="Numata Neurosurgery &amp; Cardiovascular Hospital">沼田脳神経外科循環器科病院</li>
+        </ul>
       </div>
     </div>
-    <p style="margin-top:18px;font-size:12.5px;color:var(--ink-3)" data-en="Studies are also run with co-investigators at Gunma University, Numata Neurosurgery &amp; Cardiovascular Hospital, Mejiro University and other partner sites.">このほか、群馬大学、沼田脳神経外科循環器科病院、目白大学 耳科学研究所クリニックなどの共同研究者とともに研究を実施しています。</p>
+    <p style="margin-top:18px;font-size:12.5px;color:var(--ink-3)" data-en="Multi-centre studies are run with co-investigators at these and other partner sites.">上記のほかの施設の共同研究者とともに、多施設での研究を実施しています。</p>
   </div>
 </section>
 
@@ -2986,7 +2981,7 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
       </article>
 
       <article class="proj" data-areas="vestibular stroke">
-        <div class="top"><span class="badge live">Active</span><span class="per">2025&ndash;2027</span></div>
+        <div class="top"><span class="badge live">Active</span><span class="badge pi">PI</span><span class="per">2025&ndash;2027</span></div>
         <h4 data-en="Vestibular function assessment supporting community reintegration after stroke">脳卒中後の社会復帰を支える前庭機能評価</h4>
         <p class="fund" data-en="Yumemi Foundation for Housing &amp; Medical Care, Research Grant">公益財団法人 ユニベール／在宅医療研究助成</p>
         <p class="chips" style="display:flex;gap:5px;flex-wrap:wrap"><span class="chip">Vestibular</span><span class="chip">Stroke</span></p>
